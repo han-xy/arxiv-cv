@@ -10,6 +10,7 @@ import json
 import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -30,6 +31,7 @@ DEFAULT_CONFIG = {
     "exclude_keywords": [],
     "translate": True,
     "openai_model": "gpt-4o-mini",
+    "translation_batch_size": 3,
 }
 
 
@@ -160,10 +162,30 @@ def merge_existing_translations(
     for paper in papers:
         old = by_id.get(paper.get("id"))
         if old:
-            paper["title_zh"] = old.get("title_zh", "")
+            paper["title_zh"] = ""
             paper["summary_zh"] = old.get("summary_zh", "")
             paper["translation_status"] = old.get("translation_status", "")
     return papers
+
+
+def summarize_http_error(exc: urllib.error.HTTPError) -> str:
+    body = exc.read().decode("utf-8", errors="replace")
+    if not body:
+        return f"HTTP {exc.code}: {exc.reason}"
+    try:
+        payload = json.loads(body)
+        error = payload.get("error", {})
+        message = error.get("message") or body
+        code = error.get("code")
+        error_type = error.get("type")
+        pieces = [f"HTTP {exc.code}", message]
+        if error_type:
+            pieces.append(f"type={error_type}")
+        if code:
+            pieces.append(f"code={code}")
+        return " | ".join(pieces)
+    except json.JSONDecodeError:
+        return f"HTTP {exc.code}: {body[:600]}"
 
 
 def openai_request(messages: list[dict[str, str]], model: str) -> str:
@@ -190,49 +212,93 @@ def openai_request(messages: list[dict[str, str]], model: str) -> str:
             "User-Agent": "arxiv-cv-digest/1.0",
         },
     )
-    with urllib.request.urlopen(request, timeout=60) as response:
-        payload = json.loads(response.read().decode("utf-8"))
-    return payload["choices"][0]["message"]["content"]
+    retry_delays = [15, 30, 60]
+    for attempt in range(len(retry_delays) + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=90) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+            return payload["choices"][0]["message"]["content"]
+        except urllib.error.HTTPError as exc:
+            detail = summarize_http_error(exc)
+            if exc.code != 429 or "insufficient_quota" in detail or attempt == len(retry_delays):
+                raise RuntimeError(detail) from exc
+            retry_after = exc.headers.get("Retry-After")
+            delay = int(retry_after) if retry_after and retry_after.isdigit() else retry_delays[attempt]
+            print(f"OpenAI rate limited; retrying in {delay}s")
+            time.sleep(delay)
+    raise RuntimeError("OpenAI request failed")
 
 
-def translate_paper(paper: dict[str, Any], config: dict[str, Any]) -> None:
-    if not config.get("translate", True):
-        paper["translation_status"] = "disabled"
+def needs_translation(paper: dict[str, Any]) -> bool:
+    return not paper.get("summary_zh")
+
+
+def mark_translation_unavailable(papers: list[dict[str, Any]], status: str) -> None:
+    for paper in papers:
+        if needs_translation(paper):
+            paper["translation_status"] = status
+
+
+def translate_batch(papers: list[dict[str, Any]], config: dict[str, Any]) -> None:
+    if not papers:
         return
-    if paper.get("title_zh") and paper.get("summary_zh"):
+    if not config.get("translate", True):
+        mark_translation_unavailable(papers, "disabled")
         return
     if not os.environ.get("OPENAI_API_KEY", "").strip():
-        paper["translation_status"] = "missing_api_key"
+        mark_translation_unavailable(papers, "missing_api_key")
+        return
+
+    targets = [paper for paper in papers if needs_translation(paper)]
+    if not targets:
         return
 
     model = str(config.get("openai_model") or DEFAULT_CONFIG["openai_model"])
+    paper_payload = [
+        {
+            "id": paper.get("id", ""),
+            "summary_en": paper.get("summary_en", ""),
+        }
+        for paper in targets
+    ]
     content = openai_request(
         [
             {
                 "role": "system",
                 "content": (
-                    "Translate this computer vision arXiv paper title and abstract into concise, "
+                    "Translate each computer vision arXiv paper abstract into concise, "
                     "accurate Simplified Chinese. Preserve technical terms when English is clearer. "
-                    'Return strict JSON with keys "title_zh" and "summary_zh".'
+                    "Return strict JSON with key translations, whose value is an array of objects "
+                    'with keys "id" and "summary_zh".'
                 ),
             },
             {
                 "role": "user",
-                "content": json.dumps(
-                    {
-                        "title_en": paper.get("title_en", ""),
-                        "summary_en": paper.get("summary_en", ""),
-                    },
-                    ensure_ascii=False,
-                ),
+                "content": json.dumps({"papers": paper_payload}, ensure_ascii=False),
             },
         ],
         model,
     )
     translated = json.loads(content)
-    paper["title_zh"] = normalize_space(str(translated.get("title_zh", "")))
-    paper["summary_zh"] = normalize_space(str(translated.get("summary_zh", "")))
-    paper["translation_status"] = "translated"
+    by_id = {
+        str(item.get("id")): item
+        for item in translated.get("translations", [])
+        if isinstance(item, dict)
+    }
+    for paper in targets:
+        item = by_id.get(str(paper.get("id")))
+        if not item:
+            paper["translation_status"] = "translation_error"
+            paper["translation_error"] = "Translation response missing this paper"
+            continue
+        paper["title_zh"] = ""
+        paper["summary_zh"] = normalize_space(str(item.get("summary_zh", "")))
+        paper["translation_status"] = "translated"
+        paper.pop("translation_error", None)
+
+
+def chunked(items: list[dict[str, Any]], size: int) -> list[list[dict[str, Any]]]:
+    return [items[i : i + size] for i in range(0, len(items), size)]
 
 
 def main() -> None:
@@ -242,14 +308,17 @@ def main() -> None:
         papers = fetch_arxiv(config)
         papers = [paper for paper in papers if matches_keywords(paper, config)]
         papers = merge_existing_translations(papers, existing.get("papers", []))
-        for paper in papers:
+        batch_size = max(1, min(int(config.get("translation_batch_size", 3)), 6))
+        for batch in chunked(papers, batch_size):
             try:
-                translate_paper(paper, config)
+                translate_batch(batch, config)
             except Exception as exc:  # noqa: BLE001 - keep the digest publishing.
-                paper["translation_status"] = "translation_error"
-                paper["translation_error"] = f"{type(exc).__name__}: {exc}"
+                for paper in batch:
+                    if needs_translation(paper):
+                        paper["translation_status"] = "translation_error"
+                        paper["translation_error"] = str(exc)
             if os.environ.get("OPENAI_API_KEY", "").strip():
-                time.sleep(0.15)
+                time.sleep(8)
 
         write_output(
             {

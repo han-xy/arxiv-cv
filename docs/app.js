@@ -60,12 +60,12 @@ function filteredPapers() {
 
 function translationFallback(paper, kind) {
   if (paper.translation_status === "missing_api_key") {
-    return kind === "title" ? "未配置翻译服务" : "仓库 Secrets 配置 OPENAI_API_KEY 后会生成中文翻译。";
+    return kind === "title" ? "" : "仓库 Secrets 配置 OPENAI_API_KEY 后会生成中文翻译。";
   }
   if (paper.translation_status === "translation_error") {
-    return kind === "title" ? "翻译失败" : "本次翻译失败。请检查 GitHub Actions 日志或重新运行 workflow。";
+    return kind === "title" ? "" : "本次翻译失败。请检查 GitHub Actions 日志或重新运行 workflow。";
   }
-  return kind === "title" ? paper.title_en : paper.summary_en;
+  return kind === "title" ? "" : paper.summary_en;
 }
 
 function renderTags(container, paper) {
@@ -109,8 +109,9 @@ function render() {
   for (const paper of papers) {
     const node = els.template.content.cloneNode(true);
     node.querySelector(".paper-id").textContent = paper.id || "arXiv";
-    node.querySelector(".title-zh").textContent =
-      paper.title_zh || translationFallback(paper, "title");
+    const titleZh = node.querySelector(".title-zh");
+    titleZh.textContent = paper.title_zh || translationFallback(paper, "title");
+    titleZh.hidden = !titleZh.textContent;
     node.querySelector(".title-en").textContent = paper.title_en || "";
     node.querySelector(".authors").textContent = (paper.authors || []).join(", ");
     node.querySelector(".summary-zh p").textContent =
