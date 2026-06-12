@@ -23,7 +23,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13679v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13679v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13677v1",
@@ -48,7 +48,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13677v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13677v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13676v1",
@@ -71,7 +71,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13676v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13676v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13674v1",
@@ -97,7 +97,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13674v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13674v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13673v1",
@@ -127,7 +127,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13673v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13673v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13655v1",
@@ -151,7 +151,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13655v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13655v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13652v1",
@@ -179,7 +179,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13652v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13652v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13644v1",
@@ -203,7 +203,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13644v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13644v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13625v1",
@@ -226,7 +226,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13625v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13625v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13587v1",
@@ -250,7 +250,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13587v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13587v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13580v1",
@@ -273,7 +273,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13580v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13580v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13562v1",
@@ -296,7 +296,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13562v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13562v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13558v1",
@@ -320,7 +320,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13558v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13558v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13528v1",
@@ -340,7 +340,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13528v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13528v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13515v1",
@@ -367,7 +367,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13515v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13515v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13509v1",
@@ -389,7 +389,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13509v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13509v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13503v1",
@@ -414,7 +414,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13503v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13503v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13497v1",
@@ -441,7 +441,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13497v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13497v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13496v1",
@@ -463,7 +463,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13496v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13496v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13494v1",
@@ -491,7 +491,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13494v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13494v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13488v1",
@@ -511,7 +511,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13488v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13488v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13461v1",
@@ -531,7 +531,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13461v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13461v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13460v1",
@@ -554,7 +554,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13460v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13460v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13432v1",
@@ -584,7 +584,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13432v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13432v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13427v1",
@@ -607,7 +607,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13427v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13427v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13410v1",
@@ -629,7 +629,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13410v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13410v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13382v1",
@@ -650,7 +650,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13382v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13382v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13376v1",
@@ -675,7 +675,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13376v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13376v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13368v1",
@@ -709,7 +709,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13368v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13368v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13366v1",
@@ -731,7 +731,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13366v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13366v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13364v1",
@@ -754,7 +754,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13364v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13364v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13345v1",
@@ -779,7 +779,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13345v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13345v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13341v1",
@@ -802,7 +802,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13341v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13341v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13332v1",
@@ -826,7 +826,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13332v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13332v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13315v1",
@@ -849,7 +849,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13315v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13315v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13312v1",
@@ -870,7 +870,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13312v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13312v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13304v1",
@@ -892,7 +892,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13304v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13304v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13303v1",
@@ -913,7 +913,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13303v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13303v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13289v1",
@@ -946,7 +946,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13289v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13289v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13288v1",
@@ -969,7 +969,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13288v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13288v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13275v1",
@@ -990,7 +990,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13275v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13275v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13267v1",
@@ -1016,7 +1016,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13267v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13267v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13240v1",
@@ -1043,7 +1043,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13240v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13240v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13239v1",
@@ -1078,7 +1078,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13239v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13239v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13223v1",
@@ -1099,7 +1099,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13223v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13223v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13206v1",
@@ -1124,7 +1124,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13206v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13206v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13188v1",
@@ -1149,7 +1149,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13188v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13188v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13156v1",
@@ -1170,7 +1170,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13156v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13156v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13136v1",
@@ -1192,7 +1192,7 @@
       "abs_url": "https://arxiv.org/abs/2606.13136v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13136v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "id": "2606.13135v1",
@@ -1216,10 +1216,10 @@
       "abs_url": "https://arxiv.org/abs/2606.13135v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13135v1",
       "translation_status": "translation_error",
-      "translation_error": "ValueError: unknown url type: '/v1/chat/completions'"
+      "translation_error": "HTTPError: HTTP Error 429: Too Many Requests"
     }
   ],
-  "last_updated": "2026-06-12T08:14:23.070597+00:00",
+  "last_updated": "2026-06-12T08:23:36.298802+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
