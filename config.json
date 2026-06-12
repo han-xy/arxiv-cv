@@ -1,0 +1,8 @@
+{
+  "category": "cs.CV",
+  "max_results": 50,
+  "keywords": [],
+  "exclude_keywords": [],
+  "translate": true,
+  "openai_model": "gpt-4o-mini"
+}
