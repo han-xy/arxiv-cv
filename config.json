@@ -4,5 +4,5 @@
   "keywords": [],
   "exclude_keywords": [],
   "translate": true,
-  "openai_model": "gpt-4o-mini"
+  "openai_model": "deepseek-chat"
 }

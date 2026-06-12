@@ -30,7 +30,7 @@ DEFAULT_CONFIG = {
     "keywords": [],
     "exclude_keywords": [],
     "translate": True,
-    "openai_model": "gpt-4o-mini",
+    "openai_model": "deepseek-chat",
     "translation_batch_size": 3,
 }
 
@@ -189,11 +189,15 @@ def summarize_http_error(exc: urllib.error.HTTPError) -> str:
 
 
 def openai_request(messages: list[dict[str, str]], model: str) -> str:
-    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    api_key = (
+        os.environ.get("DEEPSEEK_API_KEY")
+        or os.environ.get("OPENAI_API_KEY")
+        or ""
+    ).strip()
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is not set")
+        raise RuntimeError("DEEPSEEK_API_KEY is not set")
 
-    base_url = (os.environ.get("OPENAI_BASE_URL") or "https://api.openai.com").rstrip("/")
+    base_url = (os.environ.get("OPENAI_BASE_URL") or "https://api.deepseek.com").rstrip("/")
     body = json.dumps(
         {
             "model": model,
@@ -245,7 +249,8 @@ def translate_batch(papers: list[dict[str, Any]], config: dict[str, Any]) -> Non
     if not config.get("translate", True):
         mark_translation_unavailable(papers, "disabled")
         return
-    if not os.environ.get("OPENAI_API_KEY", "").strip():
+    api_key = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not (api_key or "").strip():
         mark_translation_unavailable(papers, "missing_api_key")
         return
 
@@ -317,7 +322,8 @@ def main() -> None:
                     if needs_translation(paper):
                         paper["translation_status"] = "translation_error"
                         paper["translation_error"] = str(exc)
-            if os.environ.get("OPENAI_API_KEY", "").strip():
+            api_key = os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("OPENAI_API_KEY")
+            if (api_key or "").strip():
                 time.sleep(8)
 
         write_output(
@@ -326,7 +332,9 @@ def main() -> None:
                 "last_updated": utc_now().isoformat(),
                 "last_error": None,
                 "config": config,
-                "translation_enabled": bool(os.environ.get("OPENAI_API_KEY", "").strip()),
+                "translation_enabled": bool(
+                    (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("OPENAI_API_KEY") or "").strip()
+                ),
             }
         )
         print(f"Wrote {len(papers)} papers to {OUTPUT_PATH}")

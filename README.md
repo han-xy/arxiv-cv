@@ -18,12 +18,12 @@
 
 ## 中文翻译
 
-如果需要中文标题和中文摘要，在 GitHub 仓库 `Settings` -> `Secrets and variables` -> `Actions` 中添加：
+如果需要中文摘要，在 GitHub 仓库 `Settings` -> `Secrets and variables` -> `Actions` 中添加：
 
-- `OPENAI_API_KEY`
+- `DEEPSEEK_API_KEY`
 - 可选：`OPENAI_BASE_URL`
 
-可在 `config.json` 中修改 `openai_model`。没有配置 key 时，页面仍会展示英文内容，并在中文区提示未配置翻译服务。
+默认使用 DeepSeek 的 OpenAI-compatible 接口，`OPENAI_BASE_URL` 不填时会使用 `https://api.deepseek.com`。没有配置 key 时，页面仍会展示英文内容，并在中文区提示未配置翻译服务。
 
 ## 关注方向
 
@@ -36,7 +36,7 @@
   "keywords": ["3D reconstruction", "NeRF", "Gaussian Splatting"],
   "exclude_keywords": [],
   "translate": true,
-  "openai_model": "gpt-4o-mini"
+  "openai_model": "deepseek-chat"
 }
 ```
 
