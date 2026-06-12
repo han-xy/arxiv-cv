@@ -171,7 +171,7 @@ def openai_request(messages: list[dict[str, str]], model: str) -> str:
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY is not set")
 
-    base_url = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com").rstrip("/")
+    base_url = (os.environ.get("OPENAI_BASE_URL") or "https://api.openai.com").rstrip("/")
     body = json.dumps(
         {
             "model": model,

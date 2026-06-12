@@ -62,6 +62,9 @@ function translationFallback(paper, kind) {
   if (paper.translation_status === "missing_api_key") {
     return kind === "title" ? "未配置翻译服务" : "仓库 Secrets 配置 OPENAI_API_KEY 后会生成中文翻译。";
   }
+  if (paper.translation_status === "translation_error") {
+    return kind === "title" ? "翻译失败" : "本次翻译失败。请检查 GitHub Actions 日志或重新运行 workflow。";
+  }
   return kind === "title" ? paper.title_en : paper.summary_en;
 }
 
