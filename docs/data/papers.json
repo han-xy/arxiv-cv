@@ -1251,7 +1251,7 @@
       "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
     }
   ],
-  "last_updated": "2026-06-19T02:49:10.608968+00:00",
+  "last_updated": "2026-06-20T02:09:20.636466+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
