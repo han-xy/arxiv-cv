@@ -1,6 +1,252 @@
 {
   "papers": [
     {
+      "id": "2607.13031v1",
+      "title_en": "The Seriality Gap in Video Diffusion Models",
+      "title_zh": "",
+      "summary_en": "When one ball strikes another, then another, video models should predict the consequences of each bounce. In controlled experiments on multi-ball hard-sphere dynamics, we find that the performance of standard bidirectional video diffusion degrades as the causal chain lengthens, even when provided more denoising steps. In a length-matched single-ball control, where ball-ball interactions are absent, the degradation largely disappears, isolating dependent-event structure rather than video length as the cause. Across intervention studies, methods that increase effective serial computation improve performance disproportionately, including autoregressive/blockwise generation and architectural depth. We identify this pattern as the seriality gap: a mismatch between tasks requiring growing serial computation and video diffusion models whose denoising loop does not provide scalable serial compute. We then prove that, for deterministic video prediction, denoising steps do not add serial computation beyond the backbone, indicating a structural obstacle for video diffusion on serial reasoning and simulation tasks.",
+      "summary_zh": "",
+      "authors": [
+        "Jorge Diaz Chao",
+        "Konpat Preechakul",
+        "Yuxi Liu",
+        "Yutong Bai"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "published": "2026-07-14T17:59:22+00:00",
+      "updated": "2026-07-14T17:59:22+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.13031v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13031v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.13017v1",
+      "title_en": "FlowWAM: Optical Flow as a Unified Action Representation for World Action Models",
+      "title_zh": "",
+      "summary_en": "World Action Models (WAMs) are able to leverage pretrained video generators for both world modeling and action prediction. However, directly leveraging such video generators for control raises a new challenge: how to represent actions in a suitable form that aligns with pretrained video generators while carrying enough motion cues for accurate control. Existing numerical actions fail to satisfy the former, and prior visual action representations overlook the temporal motion structure across frames. We address this issue with FlowWAM, a dual-stream diffusion framework that adopts optical flow as a unified, video-native action representation. Flow videos share the same format as RGB videos and encode rich per-pixel displacement. By jointly modeling them within a shared pretrained video generator, FlowWAM can naturally implement two modes of WAMs. In policy mode, FlowWAM generates flow for action prediction, while in world-model mode, it uses target flow sequences to guide future video generation. Moreover, since flow can be easily extracted from raw videos without action labels, FlowWAM can leverage large-scale action-unlabeled video datasets for pretraining. We empirically find that our flow-based action representation delivers gains across both modes. On RoboTwin manipulation, FlowWAM raises the success rate to 92.94% on the Clean setting and 92.14% on Random, outperforming both VLA and WAM baselines. On WorldArena world modeling, it achieves the best overall EWMScore (63.71) with an 18.4% relative improvement in trajectory accuracy. More results can be found on our project website: https://flow-wam.github.io .",
+      "summary_zh": "",
+      "authors": [
+        "Yixiang Chen",
+        "Peiyan Li",
+        "Yuan Xu",
+        "Qisen Ma",
+        "Jiabing Yang",
+        "Kai Wang",
+        "Jianhua Yang",
+        "Dong An",
+        "He Guan",
+        "Gaoteng Liu",
+        "Jianlou Si",
+        "Jun Huang",
+        "Jing Liu",
+        "Nianfeng Liu",
+        "Yan Huang",
+        "Liang Wang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-07-14T17:57:12+00:00",
+      "updated": "2026-07-14T17:57:12+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.13017v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13017v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.13010v1",
+      "title_en": "DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology",
+      "title_zh": "",
+      "summary_en": "Dermatological practice routinely involves measuring and tracking lesion size, morphology and texture, as critical components of wound or skin cancer screening, monitoring and diagnosis. To accomplish this task, practitioners often image the skin surface with commonly available off-the-shelf camera sensors. This has led to an overwhelming research focus on 2D methods while these objectives naturally benefit from 3D information. In this paper, we demonstrate that dense monocular 3D reconstructions, metric scale measurements and rich surface normal texture estimates are achievable for both dermoscopic and macroscopic cases without the need for additional hardware or multiple captures. We present DermDepth, the first single-view metric scale 3D model for the dermatological domain and D-Synth, the first synthetic dermoscopic dataset with pixel-perfect 3D information. Our experiments show training DermDepth on D-Synth corrects metric scale error from over 16x to under 1.1x for real dermoscopic data, while preserving geometric quality and increasing texture richness. Fine-tuning on a small amount of real clinical samples generalizes our method across three real-world benchmarks spanning the few mm to hundred cm range, diverse skin-tones, chronic wound cases and produces measurements broadly consistent with disease size reported in medical literature. All code, data and models are available at https://github.com/hectorcarrion/dermdepth.",
+      "summary_zh": "",
+      "authors": [
+        "Héctor Carrión",
+        "Narges Norouzi"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T17:51:37+00:00",
+      "updated": "2026-07-14T17:51:37+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.13010v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13010v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12993v1",
+      "title_en": "X-Lens: Real-Time Metric Depth Estimation with Heterogeneous Cameras",
+      "title_zh": "",
+      "summary_en": "We present X-lens, a compact feed-forward model for metric depth estimation from a variable number of calibrated fisheye and pinhole views. To support real-time downstream perception, X-lens is built around a geometry-aware heterogeneous camera formulation with two key components. Learnable calibration tokens provide a coarse alignment between fisheye and pinhole projective spaces, while a Jacobian-parameterized distortion bias injected into cross-attention models local projection changes and promotes cross-camera consistency, enabling robust generalization with only 0.04B parameters and up to 41 FPS. The model predicts dense depth together with a global metric scale, avoiding auxiliary reconstruction targets that increase computation and optimization complexity. To learn such cross-camera generalization at scale and depth, X-lens is trained on multiple public datasets and OmniScene, our newly released large-scale synthetic dataset containing approximately 266K synchronized six-view frames, 1.7M individual images, and 103 indoor and outdoor scenes. Extensive experiments on both real-world and synthetic indoor and outdoor datasets demonstrate superior heterogeneous-camera metric depth accuracy, reducing AbsRel by 25.4\\% on OmniScene-Full over the strongest baseline while using 88.9\\% fewer parameters, with competitive performance on conventional fisheye-only and pinhole-only settings.",
+      "summary_zh": "",
+      "authors": [
+        "Heng Zhou",
+        "Shuhong Liu",
+        "Yonghao He",
+        "Bohao Zhang",
+        "Fa Fu",
+        "Chenhui Hou",
+        "Xianbao Hou",
+        "Lijun Han",
+        "Wei Sui"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T17:45:50+00:00",
+      "updated": "2026-07-14T17:45:50+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12993v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12993v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12987v1",
+      "title_en": "Controllable Generation of Diverse Dermatological Imagery for Fair and Efficient Malignancy Classification",
+      "title_zh": "",
+      "summary_en": "Accurate dermatological diagnosis naturally necessitates equitable performance across diverse populations, yet a systematic lack of expertly annotated images, especially for underrepresented skin tones and rare diseases, impedes progress toward measurably fair methods. We introduce cgDDI (Controllable Generation of Diverse Dermatological Imagery), a hybrid framework that (1) synthesizes realistic healthy skin samples without disturbing other input properties, (2) maps single-sample rare lesions onto novel skin-tones and locations non-parametrically, and (3) allows for efficient parametric generation with as few as 10 training samples. The framework supports both human and automated segmentation masking, enabling scalability to datasets without pre-made lesion masks. We grow a 656-image dataset by more than 400x and validate across two datasets: biopsy-confirmed Diverse Dermatology Images (DDI) and expert-verified Fitzpatrick17k (F17k). On the DDI benchmark, we achieve malignancy classification accuracy of 86.4% under synthetic-only training and 90.9% state-of-the-art performance with real data fine-tuning, alongside leading fairness metrics. Cross-dataset experiments show +13.9% accuracy improvements on unseen F17k data despite minimal disease overlap. We openly release 266k+ synthetic images, code, and generative models to further support fairness research at https://github.com/hectorcarrion/ControllableGenDDI.",
+      "summary_zh": "",
+      "authors": [
+        "Héctor Carrión",
+        "Narges Norouzi"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T17:32:13+00:00",
+      "updated": "2026-07-14T17:32:13+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12987v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12987v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12959v1",
+      "title_en": "ViCo3D: Empowering LiDAR-based Collaborative 3D Object Detection with Vision Foundation Models",
+      "title_zh": "",
+      "summary_en": "LiDAR-based collaborative 3D perception in Vehicle-to-Everything (V2X) systems typically relies on fusing bird's-eye-view (BEV) features across agents. However, current BEV representations, typically extracted by LiDAR backbones trained from scratch, are geometry-dominated and lack general semantic priors, inherently limiting the efficacy of feature-level collaboration. Meanwhile, vision foundation models (VFMs) pretrained on large-scale image data have demonstrated strong capability in learning general-purpose and informative visual representations for 2D tasks, and have the potential to enhance agent-wise LiDAR BEV representations for collaboration. Despite this potential, adapting VFMs to LiDAR-based 3D detection remains challenging due to the substantial image-point cloud modality gap. To bridge this gap, we propose ViCo3D, a collaborative 3D object detection framework powered by VFMs. Specifically, ViCo3D adapts VFMs to LiDAR-based collaborative perception from three aspects: First, ViCo3D projects point clouds onto the BEV plane as three-channel images, enabling DINOv2 to extract BEV-space visual features from LiDAR inputs. Besides, to effectively integrate these DINOv2-derived features with LiDAR geometric features, ViCo3D introduces a multi-scale BEV fusion module within the single-agent encoder. In addition, ViCo3D adopts an ego-centric cross-agent fusion strategy to aggregate complementary information from multiple agents. Experiments on DAIR-V2X and V2XSet demonstrate that ViCo3D achieves state-of-the-art 3D detection performance. Remarkably, it delivers up to 1.8x greater collaborative gains than prior methods on DAIR-V2X. The code will be made public available for future investigation.",
+      "summary_zh": "",
+      "authors": [
+        "Haojie Ren",
+        "Songrui Luo",
+        "Lingfeng Wang",
+        "Yan Xia",
+        "Yao Li",
+        "Jing Li",
+        "Lu Zhang",
+        "Jiajun Deng",
+        "Yanyong Zhang"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T16:56:10+00:00",
+      "updated": "2026-07-14T16:56:10+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12959v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12959v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12939v1",
+      "title_en": "Point Tracking in Surgery--The 2025 Surgical Tattoos in Infrared Challenge (STIRC2025)",
+      "title_zh": "",
+      "summary_en": "Point tracking in surgery is crucial to enable applications in downstream tasks such as segmentation, 3D reconstruction, virtual tissue landmarking, autonomous probe-based scanning, and subtask autonomy. This paper introduces the 2025 iteration of a point tracking challenge to address this, wherein participants submit their algorithms for quantification. Their algorithms are evaluated using a dataset named surgical tattoos in infrared (STIR), with the challenge named the STIR Challenge 2025 (STIRC2025). The STIR Challenge 2025 comprises two quantitative components: accuracy and efficiency. The accuracy component tests the accuracy of algorithms on in vivo and ex vivo sequences. The efficiency component tests algorithm inference latency. The challenge was conducted as a part of MICCAI EndoVis 2025, and seven teams participated in this challenge. In this paper we summarize the challenge results and participant methods. The challenge dataset is available at: https://zenodo.org/records/20191078, and the code for baseline models and metrics calculation is available here: https://github.com/athaddius/STIRMetrics",
+      "summary_zh": "",
+      "authors": [
+        "Adam Schmidt",
+        "Mert Asim Karaoglu",
+        "Zijian Wu",
+        "Jiaming Zhang",
+        "Yuxin Chen",
+        "Tim Salcudean",
+        "Ho-Gun Ha",
+        "Minkang Jang",
+        "Kyungmin Jung",
+        "Ihsan Ullah",
+        "Hyunki Lee",
+        "Suresh Guttikonda",
+        "Sarah Latus",
+        "Alexander Schlaefer",
+        "Xinkai Zhao",
+        "Yuichiro Hayashi",
+        "Masahiro Oda",
+        "Takayuki Kitasaka",
+        "Kensaku Mori",
+        "Peng Liu",
+        "Chenyang Li",
+        "Stefanie Speidel",
+        "Aoife Gardiner",
+        "Agostino Stilli",
+        "Danail Stoyanov",
+        "Francisco Vasconcelos",
+        "Anwesa Choudhuri",
+        "Meng Zheng",
+        "Zhongpai Gao",
+        "Benjamin Planche",
+        "Van Nguyen Nguyen",
+        "Terrence Chen",
+        "Ziyan Wu",
+        "Alexander Ladikos",
+        "Omid Mohareri"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T16:10:49+00:00",
+      "updated": "2026-07-14T16:10:49+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12939v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12939v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12937v1",
+      "title_en": "Exact and Calibrated Diffusion Reconstruction for Digital Breast Tomosynthesis",
+      "title_zh": "",
+      "summary_en": "Limited-angle digital breast tomosynthesis (DBT) reconstructs a volume from a few low-dose projections over a narrow arc. At a representative nine-view, $25^{\\circ}$ protocol more than 98% of image space is unmeasured, so a learned prior must supply structure in the missing wedge. Conditional diffusion priors achieve strong perceptual quality here but leave three clinical obstacles: inexact data consistency, unlocalized hallucination, and uncalibrated uncertainty. We enforce measurements exactly by replacing the per-step proximal update of a conditional diffusion sampler with exact Euclidean projection onto the data-consistent set, computed via an $m$-dimensional dual system with a one-time Gram matrix $AA^{\\top}$ factorization. This projection costs 4.5 ms per step (a $248\\times$ speedup) and drives the data residual to the double-precision floor ($2.4\\times10^{-13}$). We prove it is the $ρ\\to0$ limit of the proximal step, provide a no-harm theorem, and show that exactly consistent sample ensembles have variance supported on null($A$). Thus, the mean's entire error lies in the unmeasured subspace covered by the uncertainty map. On patient-derived breast phantoms, this improves fidelity at no depth-resolution cost. Conversely, a proximal step applied post-update degrades quality, isolating the consistency step's placement as decisive. Isotonic recalibration brings the ensemble spread to a calibrated error scale (expected calibration error $0.029\\to0.008$; standardized error $4.7\\to0.96$), ranking errors better than the pure prior. We also repair a 20.3% adjoint mismatch in a deployed projector via a materialized operator of record. This is the first data-consistent, uncertainty-calibrated learned reconstruction for limited-angle DBT. The solver naturally relaxes to discrepancy-ball and maximum-a-posteriori modes for noisy measurements.",
+      "summary_zh": "",
+      "authors": [
+        "Imade Bouftini"
+      ],
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "published": "2026-07-14T16:10:10+00:00",
+      "updated": "2026-07-14T16:10:10+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12937v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12937v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.12934v1",
+      "title_en": "Domain-Incremental Remote Sensing Change Detection via Difference-Guided Adaptation and Frequency-Decoupled Distillation",
+      "title_zh": "",
+      "summary_en": "Remote sensing change detection (RSCD) models are prone to catastrophic forgetting when incrementally adapted to new domains. Existing domain-incremental learning (DIL) methods mainly preserve image-level representations but often overlook bitemporal discrepancy cues, which are critical for robust change detection under domain shifts. To address this limitation, we propose DG-FDD, a domain-incremental change detection framework that integrates Difference-Guided Adaptation and Frequency-Decoupled Distillation. Specifically, the Difference-Guided Dynamic Adapter (DGDA) models bitemporal feature discrepancies to promote change-aware feature adaptation and reduce domain-specific interference. Meanwhile, the Frequency-Decoupled Knowledge Distillation strategy with Cross-domain Synthesis (FDKD-CS) separates structural information from domain style in the frequency domain, enabling stable knowledge transfer without historical data. Extensive experiments on three public high-resolution RSCD datasets under two- and three-domain incremental protocols demonstrate that DG-FDD effectively mitigates catastrophic forgetting. Compared with independently trained single-task models, DG-FDD records mean relative changes in F1 and IoU of only -0.23% and -0.45%, respectively, across six two-domain sequences, and -0.69% and -1.31%, respectively, across the three evaluated three-domain sequences. These results indicate a favorable stability-plasticity balance between historical knowledge retention and new-domain adaptation in continual cross-domain change detection.",
+      "summary_zh": "",
+      "authors": [
+        "Daifeng Peng",
+        "Yaning Li",
+        "Haiyan Guan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-14T16:07:21+00:00",
+      "updated": "2026-07-14T16:07:21+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.12934v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.12934v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
       "id": "2607.12911v1",
       "title_en": "Open-KNEAD: Knowledge-grounded Nutrition Estimation via Agentic Decomposition",
       "title_zh": "",
@@ -1002,230 +1248,9 @@
       "pdf_url": "https://arxiv.org/pdf/2607.12545v1",
       "translation_status": "translation_error",
       "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12544v1",
-      "title_en": "Edge-Aware Thermal Infrared UAV Swarm Tracking",
-      "title_zh": "",
-      "summary_en": "Thermal infrared (TIR) imaging is essential for UAV swarm operations in visually degraded environments. However, tracking tiny UAVs remains challenging due to limited appearance cues, frequent occlusions, and rapid maneuvers. Despite significant progress driven by benchmarks such as the Anti-UAV challenge, existing methods primarily prioritize accuracy while overlooking the computational constraints of real-time edge deployment. The standard Kalman Filter (KF) offers the efficiency required for edge devices, yet its constant-velocity assumption often breaks down under highly dynamic UAV motion and thermal sensor jitter. More sophisticated nonlinear estimators can improve robustness but often introduce additional computational costs. To address this gap, we propose an edge-aware online tracking pipeline centered on the Adaptive Kinematic Kalman Filter (AKKF), which augments the linear KF with state-dependent kinematic modeling while preserving real-time efficiency. Combined with transient false-positive suppression and kinematics-driven predictive coasting, the presented pipeline improves trajectory continuity under challenging TIR conditions. Experiments on the Beyond Strong Baseline (BSB) benchmark provide a starting point for edge-aware UAV tracking by jointly evaluating tracking performance and computational efficiency, offering insights toward future real-time deployment.",
-      "summary_zh": "",
-      "authors": [
-        "Yu-Hsi Chen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "published": "2026-07-14T09:13:54+00:00",
-      "updated": "2026-07-14T09:13:54+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12544v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12544v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12539v1",
-      "title_en": "DiTailed: Ensuring Visual Object Consistency in Text-Image-to-Image Flow Matching Models",
-      "title_zh": "",
-      "summary_en": "Despite remarkable progress in text-guided image editing, generative models frequently fail to preserve visual object consistency, defined as the preservation of a subject's key attributes throughout the editing process. We address this limitation through three contributions. First, we introduce ABO-Edit, a dataset specifically designed to study object consistency, comprising over 12,000 triplets of source images, editing prompts, and high-quality target images rendered from artist-designed 3D assets, with multi-view coverage and human-verified quality control. Second, we uncover an overlooked property of image-editing rectified flow models: the conditioning embedding space, not directly supervised during training, encodes a prediction of the final generated image even at high noise levels. Third, exploiting this finding, we propose FlowMirror, a parameter-free auxiliary loss that supervises this conditioning embedding space. Without architectural changes, our method improves generation quality across several metrics over baselines.",
-      "summary_zh": "",
-      "authors": [
-        "Francesco Taioli",
-        "Daniel Coelho",
-        "Iaroslav Melekhov",
-        "Roberto Alcover-Couso",
-        "Jose Miguel Grande Saiz",
-        "Virginia Fernandez Arguedas",
-        "Artur Bekasov"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T09:09:52+00:00",
-      "updated": "2026-07-14T09:09:52+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12539v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12539v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12503v1",
-      "title_en": "DynTrace: Tracking Dynamic Object Evidence for 4D Spatio-Temporal Reasoning in MLLMs",
-      "title_zh": "",
-      "summary_en": "4D spatio-temporal reasoning, jointly modeling 3D spatial structure and temporal evolution, is essential for understanding dynamic worlds and enabling embodied interaction. While current Multimodal Large Language Models (MLLMs) show strong capabilities in static scene understanding and coarse-grained 4D tasks, they still have notable limitations in continuous dynamic scene perception, especially in tracking dynamic object evidence for coherent 4D spatio-temporal reasoning. This shortcoming stems mainly from relying on sparse frame-level observations, fragmenting continuous dynamic cues and leaving models unable to disentangle genuine object dynamics from camera-induced apparent motion. Inspired by humans tracking dynamic cues while compensating for viewpoint changes, we propose DynTrace, a training-free framework for 4D spatio-temporal reasoning with two complementary components. Dynamic Trajectory Visualization (DTV) reprojects world-coordinate trajectories onto the image plane, providing geometry-informed visual priors that disentangle genuine object dynamics from camera-induced apparent motion. Meanwhile, the Dynamic Trace Token (DT-Token), organized into a Dynamic Trace Graph (DTG), tracks object-level dynamic cues, trace evolution, and key moments, maintaining continuous dynamic object evidence for coherent 4D reasoning. Together, these two components equip MLLMs with continuously tracked dynamic object evidence, grounded in geometry-informed visual priors and structured spatio-temporal traces. DynTrace consistently improves open-source MLLMs, achieving state-of-the-art results on Dyn-Bench, VLM4D, and DSI-Bench, validating the importance of tracking dynamic object evidence for robust 4D spatio-temporal reasoning.",
-      "summary_zh": "",
-      "authors": [
-        "Rongxin Gao",
-        "Yuzhi Huang",
-        "Dongxuan Liu",
-        "Chu Li",
-        "Zhenye Wang",
-        "Jie Wu",
-        "Shuzhao Xie",
-        "Jingyan Jiang",
-        "Xinghao Ding",
-        "Xiaotong Tu",
-        "Yue Huang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T08:35:07+00:00",
-      "updated": "2026-07-14T08:35:07+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12503v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12503v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12500v1",
-      "title_en": "Adversarial Attacks on Online Handwriting using Salience-based Temporal Editing",
-      "title_zh": "",
-      "summary_en": "Deep learning models for online handwriting recognition have been shown effective and are increasingly deployed in practical applications. However, their vulnerability to adversarial attacks is still a challenge. Existing adversarial methods are predominantly designed for image-based inputs and typically rely on additive spatial perturbations. When applied to online handwriting, which is inherently represented as a time series of pen trajectories, such perturbations often introduce high-frequency jitter and visibly unnatural stroke artifacts. In this work, we propose a novel adversarial attack framework for online handwriting recognition based on salience-guided temporal editing. Instead of adding noise, the proposed method generates adversarial examples by inserting and deleting points at time steps selected according to temporal salience, preserving the shape and smoothness of the original handwriting. Temporal salience is estimated using gradient-based activation mapping, which guides edits toward time steps that strongly support the original class prediction. We evaluate the proposed approach on the Unipen and CASIA-OLHWDB datasets under both white-box and one-shot black-box attack settings. Experimental results demonstrate that while conventional image-based attacks achieve strong white-box performance, they exhibit poor transferability across models. In contrast, the proposed temporal editing attack achieves stronger one-shot black-box transferability while preserving the visual structure of the handwriting. These results indicate that temporal editing is a relevant threat model for online handwriting recognition, particularly in one-shot black-box transfer settings.",
-      "summary_zh": "",
-      "authors": [
-        "Yataro Tamura",
-        "Brian Kenji Iwana",
-        "Jiseok Lee"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.CV"
-      ],
-      "published": "2026-07-14T08:32:04+00:00",
-      "updated": "2026-07-14T08:32:04+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12500v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12500v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12497v1",
-      "title_en": "TerraLogic: A Benchmark for Hierarchical Geospatial Reasoning in Earth Observation",
-      "title_zh": "",
-      "summary_en": "Beyond perception, reasoning is essential in remote sensing for advanced interpretation, inference, and decision-making. Recent advances in large language models (LLMs) have enabled tool-augmented agents that leverage external tools to perform complex analytical tasks. However, existing studies in remote sensing primarily focus on perception-oriented tasks, leaving cognitive geospatial reasoning largely underexplored. To address this gap, we introduce TerraLogic, a benchmark for geospatial reasoning. TerraLogic comprises 545 scenario-driven, hierarchy-aware tasks, such as hazard vulnerability assessment, urban heat island analysis, and forest fragmentation dynamics, spanning optical, Synthetic Aperture Radar (SAR), and infrared (IR) imagery. It advances evaluation beyond recognition and monitoring toward cognitive-level geospatial analysis. To facilitate evaluation on TerraLogic, we further propose HieraPlan, a tool-augmented agent that organizes toolkits into functional hierarchies and performs fault-tolerant reasoning. HieraPlan enables structured abstraction, robust recovery from tool failures, and stable long-horizon planning. Extensive experiments demonstrate that current approaches struggle with hierarchical geospatial reasoning, while HieraPlan provides a strong baseline with improved reasoning, cross-modal generalization, and error handling. The dataset and agent code are publicly available at https://github.com/Ireliya/TerraLogic.",
-      "summary_zh": "",
-      "authors": [
-        "Yuhang Yan",
-        "Linchao Mou",
-        "Bokang Yang",
-        "Qingyu Li"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T08:30:45+00:00",
-      "updated": "2026-07-14T08:30:45+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12497v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12497v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12495v1",
-      "title_en": "RealSkin: Spatio-Spectral Partial Neural Adjoint Maps for Image-to-3D Attribute Transfer",
-      "title_zh": "",
-      "summary_en": "Creating photorealistic 3D assets requires bridging the appearance gap between real-world observations and synthetic models. A promising approach is to transfer visual attributes from real images onto synthetic 3D surfaces. Traditional methods struggle with resolution mismatch and the inherent discreteness of point correspondences. In contrast, resolution-robust functional maps enable smooth attribute propagation but rely on near-isometry assumptions and topological consistency. To address these limitations, we propose RealSkin, a self-supervised framework that performs correspondence optimization in a learned spectral domain, guided by spatial correspondences. We first introduce a spatial-guided registration algorithm to establish coarse correspondences under severe topological discrepancies. To relax strict isometric assumptions and handle partial correspondences, we further design a spectral-aware neural adjoint network that incorporates partial correspondences into a neural function space and models non-isometric residuals for correspondence refinement. Experimental results demonstrate that our method achieves state-of-the-art performance on challenging real-to-synthetic scenarios. The code will be publicly released.",
-      "summary_zh": "",
-      "authors": [
-        "Jing Li",
-        "Yawei Luo",
-        "Xiangze Meng",
-        "Ying Li",
-        "Tieru Wu",
-        "Rui Ma"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T08:27:28+00:00",
-      "updated": "2026-07-14T08:27:28+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12495v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12495v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12477v1",
-      "title_en": "Self in Space: Benchmarking Self-Awareness and Spatial Cognition in UAV Embodied Intelligence",
-      "title_zh": "",
-      "summary_en": "Autonomous UAV systems increasingly rely on multimodal large language models (MLLMs) to operate in complex real-world environments. Such embodied scenarios require not only understanding the surrounding space but also maintaining a coherent representation of the agent itself. However, existing UAV-oriented approaches and benchmarks remain largely environment-centric, primarily focusing on spatial understanding tasks, with the agent's self-awareness remaining implicit. To address this gap, we introduce SIS-Bench, a benchmark for evaluating embodied spatial intelligence in UAV scenarios under a unified self-in-space formulation. SIS-Bench organizes evaluation along two complementary dimensions, space and self, and a three-level hierarchy of perception, memory, and reasoning. It contains 4,856 question--answer pairs across 13 tasks derived from 1,646 real-world UAV videos through a task-conditioned construction pipeline with expert verification.Extensive evaluations reveal that current MLLMs exhibit fundamental limitations in modeling dynamic and agent-centered processes. In particular, we observe a clear imbalance between spatial cognition and self-awareness, as well as a progressive performance degradation across cognitive levels.Motivated by these findings, we further explore a motion-aware representation that incorporates self-related dynamics through optical flow and visual feature fusion. Experimental results show that modeling agent motion consistently improves perception and memory performance, not only in spatial cognition but also in self-awareness, and generalizes to downstream UAV decision-making tasks.Our results highlight the importance of self-awareness for advancing embodied spatial intelligence, and provide both a new benchmark and empirical evidence for motion-aware self-in-space modeling.",
-      "summary_zh": "",
-      "authors": [
-        "Zhishan Zou",
-        "Guoyan Sun",
-        "Zhiwei Wei",
-        "Jiancheng Pan",
-        "Yujie Li",
-        "Mugen Peng",
-        "Wenjia Xu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T08:04:31+00:00",
-      "updated": "2026-07-14T08:04:31+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12477v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12477v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12464v1",
-      "title_en": "Steering Diffusion Models via Class-Contrastive Influence for Few-Shot Medical Classification",
-      "title_zh": "",
-      "summary_en": "When labeled data are scarce, off-the-shelf diffusion models can augment training sets for few-shot medical image classification, but not all generated samples are equally useful for the downstream task. Existing approaches largely improve synthetic data by increasing realism, diversity, or domain adaptation, while overlooking a more fundamental question: how should sample usefulness for classification be measured and optimized? We address this with Class-Contrastive Influence (C2I), a criterion that quantifies a sample's usefulness through its gradient-based influence on the classifier. We find that effective samples exhibit a strong C2I gap: their loss gradients align with validation gradients from the same class and oppose those from other classes. Our analysis further suggests that such high-C2I samples are hard, boundary-proximal examples that help refine the decision boundary and improve robustness. Building on this insight, we fine-tune diffusion models with reinforcement learning using a C2I-based reward to steer generation toward class-informative samples. Across several few-shot medical imaging benchmarks, C2I-guided generation improves downstream accuracy and robustness over diffusion-based augmentation baselines, showing that synthetic augmentation is most effective when guided by task usefulness rather than image quality alone.",
-      "summary_zh": "",
-      "authors": [
-        "Jeeyung Kim",
-        "Erfan Esmaeili",
-        "Qiang Qiu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "published": "2026-07-14T07:45:46+00:00",
-      "updated": "2026-07-14T07:45:46+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12464v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12464v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.12450v1",
-      "title_en": "Let RGB Be the Language of Vision",
-      "title_zh": "",
-      "summary_en": "This work introduces a unified formulation for vision models, where diverse forms of visual information beyond natural images, such as masks, depth maps, and other structured visual signals, are all represented as RGB images, while general visual tasks can be converted into a common RGB-to-RGB image editing problem. In this paradigm, different types of visual information internally share the same encoding and decoding architecture and parameters as natural images, enabling a single model to transfer across tasks through a unified visual interface, in a way analogous to how language models operate over text. We refer to this formulation as RGB In and RGB Out (RINO). Built upon a generic image editing backbone without task-specific fine-tuning, RINO demonstrates robust and competitive zero-shot performance on both dense understanding tasks such as segmentation and depth estimation (where we unify outputs as RGB), and dense-conditioned generation tasks such as pose-to-image generation (where we unify inputs as RGB). We hope this study provides useful insights toward general unified vision-language systems, where diverse visual tasks can be expressed, interpreted, and solved through a shared visual language. Code is available at https://github.com/yangtiming/RINO.",
-      "summary_zh": "",
-      "authors": [
-        "Timing Yang",
-        "Jinrui Yang",
-        "Xinlong Li",
-        "Yuhan Wang",
-        "Haoran Li",
-        "Yanqing Liu",
-        "Guoyizhe Wei",
-        "Jixuan Ying",
-        "Chen Wei",
-        "Rama Chellappa",
-        "Yuyin Zhou",
-        "Cihang Xie",
-        "Alan Yuille",
-        "Feng Wang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-14T07:25:58+00:00",
-      "updated": "2026-07-14T07:25:58+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.12450v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.12450v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
     }
   ],
-  "last_updated": "2026-07-15T01:14:55.150017+00:00",
+  "last_updated": "2026-07-16T01:24:07.347079+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
