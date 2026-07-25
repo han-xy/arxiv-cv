@@ -1,6 +1,324 @@
 {
   "papers": [
     {
+      "id": "2607.21595v1",
+      "title_en": "3D-Aware VLMs with Implicit and Explicit Geometries",
+      "title_zh": "",
+      "summary_en": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors from input videos, as well as complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes. On top of that, VLM-IE3D comes with a 3D-aware adapter that effectively fuses the two types of geometric representations with 2D visual cues. This RGB-only design injects strong 3D inductive biases for fine-grained spatial understanding and reasoning without requiring any additional 3D inputs. Extensive experiments show that VLM-IE3D achieves superior performance consistently across various 3D tasks including 3D video detection, 3D visual grounding, 3D dense captioning, and spatial reasoning. Code and models are available at https://github.com/Vegetebird/VLM-IE3D.",
+      "summary_zh": "",
+      "authors": [
+        "Wenhao Li",
+        "Xueying Jiang",
+        "Quanhao Qian",
+        "Deli Zhao",
+        "Ran Xu",
+        "Shijian Lu",
+        "Gongjie Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-07-23T17:59:59+00:00",
+      "updated": "2026-07-23T17:59:59+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21595v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21595v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21594v1",
+      "title_en": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
+      "title_zh": "",
+      "summary_en": "Multi-agent interactive world models should not only generate consistent observations, but also maintain world states that persist across agents and evolve across views. Existing autoregressive video diffusion pipelines carry forward observation history as conditioning context, which makes shared state difficult to maintain in multi-agent and multi-view settings. We present WorldWeaver (W^2), a streaming multi-agent video diffusion model that augments rollout with cross-agent world state registers: learnable tokens that store shared world information, track individual agent status, and are dynamically updated after each generated chunk. We ground these registers with supervision signals spanning individual agent status, global state views including bird's-eye views, and scene text. We further improve the architecture with a Mixture-of-Transformers design that uses separate weights for world state modeling and visual frame modeling. Extensive experiments in two-agent Minecraft video generation show that explicit world-state modeling improves logical consistency and generation quality.",
+      "summary_zh": "",
+      "authors": [
+        "Sicheng Mo",
+        "Yuheng Li",
+        "Ziyang Leng",
+        "Krishna Kumar Singh",
+        "Bolei Zhou"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:59:58+00:00",
+      "updated": "2026-07-23T17:59:58+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21594v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21594v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21592v1",
+      "title_en": "Unified Video Dense Prediction from Disjoint Data",
+      "title_zh": "",
+      "summary_en": "Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent this by restricting training to fully co-annotated data, or by incurring the large computational cost of pseudo-labeling. To mitigate this, we introduce UniD, a unified video model that jointly predicts eight dense scene properties-depth, surface normals, semantic segmentation, boundaries, human parts, albedo, shading, and materials-all learned from disjoint, domain-specific datasets. We propose a simple yet effective distillation step in which per-task experts supervise a unified backbone through lightweight task projectors, eliminating the need for annotation overlap or pseudo-labeling. Our key insight is that the strong visual priors of a pretrained diffusion model are sufficient to bridge the domain gaps introduced by disjoint training sources, enabling robust generalization to scene-task combinations never seen during training. UniD achieves competitive performance against per-task specialists and multi-task baselines, with strong generalization to out-of-distribution scenarios and enhanced temporal and cross-task consistency. Code and video results are available at https://unid-video.github.io/.",
+      "summary_zh": "",
+      "authors": [
+        "Yihong Sun",
+        "Seoung Wug Oh",
+        "Jiahui Huang",
+        "Bharath Hariharan",
+        "Joon-Young Lee"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:59:50+00:00",
+      "updated": "2026-07-23T17:59:50+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21592v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21592v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21591v1",
+      "title_en": "Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
+      "title_zh": "",
+      "summary_en": "Diffusion and flow-matching models dominate conditional image generation, yet inference-time scaling for these models is far less developed than for autoregressive language models. Because final quality is highly sensitive to the initial noise seed, many approaches spend extra compute on seed search or resampling under a black-box reward, but typically maintaining a constant memory footprint throughout inference. We show that relaxing this constraint enables an underexplored inference-time scaling axis: by front-loading exploration, evaluating many seeds early, and pruning aggressively, we can use a fixed compute budget more effectively. \\emph{Progressive Seed Pruning} (\\PSP) scores intermediate denoised estimates and progressively narrows the candidate set so that only promising trajectories are fully denoised, while keeping the total number of model evaluations fixed. Across diffusion and flow-matching backbones, \\PSP \\ consistently improves reward-guided selection and achieves higher GenEval scores (automated) and better human evaluation on prompt-alignment than best-of-$N$, importance-sampling, and tree-search baselines at matched compute. Project page: https://www.vision.caltech.edu/psp. Code: https://github.com/rogerioagjr/psp.",
+      "summary_zh": "",
+      "authors": [
+        "Rogerio Guimaraes",
+        "Pietro Perona"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:59:46+00:00",
+      "updated": "2026-07-23T17:59:46+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21591v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21591v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21582v1",
+      "title_en": "Scale Up Strategically: Learning Compositional Generalization via Bias-Aware Evaluation and Data Collection for Robotic Manipulation",
+      "title_zh": "",
+      "summary_en": "Compositional generalization is essential for robot to follow diverse instructions. However, pretrained policies are known to take shortcuts, deferring to salient cues rather than grounding language. We introduce a diagnostic framework that localizes this failure to individual \\textit{instruction factors}, \\textit{e.g.,} reusable semantic components such as color, verb, object, size, and spatial attribute. Our framework formalizes instruction factor bias, the tendency of fine-tuned policies to over-rely on dominant factors as shortcuts, and quantifies it through two metrics: Factor Dominance Rate (FDR), capturing pairwise bias between factors, and Factor Dominance Hierarchy (FDH), aggregating these into a global ranking. Evaluation on six foundation policies reveals broadly consistent ordering, \\textit{i.e.}, color $\\geq$ object $\\geq$ spatial $\\geq$ verb $\\geq$ size, with color dominant, and verb and size most under-grounded. We further show the diagnosis is actionable: a bias-aware data collection strategy that reallocates a fixed budget toward under-grounded factors outperforms baselines in simulation and on a real robot using half the demonstrations, thereby enabling more sample-efficient and generalizable policy learning.",
+      "summary_zh": "",
+      "authors": [
+        "Yu Qi",
+        "Zhang Ye",
+        "Xinyi Xu",
+        "Yuxuan Lu",
+        "Amitoj Sandhu",
+        "Boce Hu",
+        "Haojie Huang",
+        "Jonathan Tremblay",
+        "Lawson L. S. Wong"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:57:09+00:00",
+      "updated": "2026-07-23T17:57:09+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21582v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21582v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21580v1",
+      "title_en": "GraphVid: Interactive Graph-Controllable Video Generation",
+      "title_zh": "",
+      "summary_en": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\\textbf{GraphVid}$, a graph-conditioned image-to-video generation model that enables interactive control through structured interaction graphs. We further curate $\\textbf{GraphVid-Bench}$, a large-scale interaction-centric video dataset with structured relational annotations to enable training of interaction-aware video generation models. Despite using substantially less training data and fewer trainable parameters than prior motion-control methods, GraphVid delivers strong controllability and video quality. Compared with Motion-I2V, GraphVid reduces FID by up to 39.9% and FVD by 37.6%, while improving PSNR (9.87=>15.98) and SSIM (0.38=>0.61). Our results highlight the potential of structured semantic interfaces as a powerful paradigm for controllable video generation.",
+      "summary_zh": "",
+      "authors": [
+        "Vedant Shah",
+        "Onkar Susladkar",
+        "Tushar Prakash",
+        "Kiet Nguyen",
+        "Tianjio Yu",
+        "Adheesh Juvekar",
+        "Muntasir Waheed",
+        "Ismini Lourentzou"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-23T17:56:30+00:00",
+      "updated": "2026-07-23T17:56:30+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21580v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21580v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21577v1",
+      "title_en": "Synthetic data generation framework for quality control automation in gravure printing",
+      "title_zh": "",
+      "summary_en": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high-fidelity images of specific printing defects (creases, streaks, misregistration, etc.) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state-of-the-art object-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision (mAP) of 80.9\\% on real industrial testing samples. This framework provides a zero-cost, rapid-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection.",
+      "summary_zh": "",
+      "authors": [
+        "Korota Arsène Coulibaly",
+        "Mohamed Hamlich",
+        "Khalid Hmali",
+        "Andrea Trombin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "eess.IV"
+      ],
+      "published": "2026-07-23T17:55:21+00:00",
+      "updated": "2026-07-23T17:55:21+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21577v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21577v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21576v1",
+      "title_en": "Self-Supervised Learning of Structured Dynamics from Videos",
+      "title_zh": "",
+      "summary_en": "Understanding motion in video is a fundamental challenge for visual learning, as frame-to-frame change entangles two sources of dynamics: camera motion and object motion. This decomposition has remained underexplored in representation learning, partly because these factors are tightly coupled in natural videos and difficult to supervise separately. Yet recovering it is important for learning robust motion representations that separate meaningful object dynamics from camera-induced variation. We study whether such structured motion representations can be recovered from frozen features of a pretrained image vision transformer. We propose the Structured Dynamics Model (SDM), which explicitly separates the dominant source of temporal change from residual dynamics through future-feature prediction, rather than representing video change with a single entangled latent or with unstructured, spatially dense transition tokens. Training combines self-supervised learning on real video with weak supervision of scene dynamics on synthetic Kubric data. We evaluate SDM on ProbeMotion, a new evaluation suite spanning synthetic and real videos with camera motion, object motion, and combined dynamics. SDM outperforms backbone baselines using global CLS or average-pooled features, and compares favorably to strongly supervised representations such as VGGT on several probes, despite using substantially weaker supervision. These results suggest that pretrained image models can be readily repurposed into structured video-dynamics representations, providing a useful inductive bias for learning and analyzing latent video dynamics.",
+      "summary_zh": "",
+      "authors": [
+        "Lukas Knobel",
+        "Andrew Zisserman",
+        "Yuki M. Asano"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:55:07+00:00",
+      "updated": "2026-07-23T17:55:07+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21576v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21576v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21562v1",
+      "title_en": "Scene Parameter Saliency via Differentiable Light Transport",
+      "title_zh": "",
+      "summary_en": "Gradient-based saliency methods reveal which input features most influence a neural network's output, and are a standard tool for model interpretability. We observe that differentiable renderers, which are conventionally used for parameter optimisation, produce an analogous form of saliency: given any scalar metric evaluated on a rendered image, a single reverse-mode differentiation pass yields per-parameter gradients that identify which scene elements most influence the metric. We call these gradient fields metric saliency maps. Unlike neural saliency, which propagates attribution through learned weights, metric saliency propagates through the image formation process itself, including multi-bounce light transport, capturing parameter dependencies that are semi-opaque to manual inspection. We compute metric saliency maps for qualitatively different objectives: psychovisual glare indices, mean scene luminance, and neural perceptual scores. The saliency rankings differ substantially across metrics for the same scene, with parameters that dominate one objective being negligible for another. The saliency map is specific to the metric, not an intrinsic property of the scene. Our results suggest that differentiable renderers produce derivative images that are as informative for scene understanding as the primal images they were designed to generate.",
+      "summary_zh": "",
+      "authors": [
+        "Linas Beresna",
+        "Eugene Fiume"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "published": "2026-07-23T17:46:26+00:00",
+      "updated": "2026-07-23T17:46:26+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21562v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21562v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21556v1",
+      "title_en": "Visual Contrastive Self-Distillation",
+      "title_zh": "",
+      "summary_en": "On-policy self-distillation (OPSD) is promising as it removes the external teacher required by on-policy distillation (OPD), yet it still needs asymmetric information between teacher and student to ensure that the self-teacher provides a stronger learning signal than the student. Existing methods create this asymmetry either through privileged answers or visual evidence. We ask whether both can be removed, yielding a simpler form of OPSD driven purely by input conditioning. For this purpose, we propose Visual Contrastive Self-Distillation, namely VCSD, which converts image-content removal into an on-policy self-distillation signal. At each student-generated response prefix, the EMA teacher produces two next-token distributions under the same prompt and prefix -- one conditioned on the original image and the other on a content-erased control. Their token-wise log-probability difference highlights candidates whose likelihood is specifically increased by the instance-level visual content. We use this contrast to sharpen the teacher's original-image distribution within its plausible support, and distill the resulting full-distribution target into the student. Using ViRL39K dataset, VCSD consistently outperforms matched OPSD across Qwen3-VL and Qwen3.5 models. For example, on Qwen3-VL, it improves the seven-benchmark aggregate from $62.27\\% \\rightarrow 67.04\\%$ at 2B, $71.30\\% \\rightarrow 73.16\\%$ at 4B, and $72.51\\% \\rightarrow 76.26\\%$ at 8B. Furthermore, VCSD requires no external teacher, privileged answers, visual evidence signals, reasoning traces, or additional inference-time cost.",
+      "summary_zh": "",
+      "authors": [
+        "Yijun Liang",
+        "Yunjie Tian",
+        "Yijiang Li",
+        "Yuqi Jia",
+        "Furong Huang",
+        "Tianyi Zhou",
+        "Di Fu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-07-23T17:37:37+00:00",
+      "updated": "2026-07-23T17:37:37+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21556v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21556v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21553v1",
+      "title_en": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
+      "title_zh": "",
+      "summary_en": "We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video DiTs in quality while retaining the favorable long-sequence scaling of linear attention. To avoid quadratic attention throughout, Hybrid Linear-Softmax Attention combines gated linear attention for O(N)-dominated mixing with periodic gated-softmax anchors at a 3:1 ratio, restoring the full-rank token interactions that pure linear attention lacks. To propagate these refreshed representations across depth, Block Attention Residuals (AttnRes) route completed block summaries into later linear layers, enabling anchor-feature reuse and boosting deep-layer effective rank by ~12%. Through from-scratch training, SANA-Video 2.0 learns the complete hybrid directly rather than linearizing pretrained models, with reduced-resolution proxy studies establishing 25% softmax as the optimal quality-efficiency trade-off. With 40-step sampling, SANA-Video 2.0 achieves a VBench score of 84.30 in 13.2s at 480p on a single H100, remaining competitive with far larger softmax video DiTs at a fraction of the latency. Its compiled DiT forward pass is 3.2x faster than a matched full-softmax baseline at 720p/60s, a gap that expands with video duration. Furthermore, full-stack Sol-Engine optimization (kernel fusion, caching, and sparse attention) accelerates this hardware-friendly backbone by a further 3.58x, bringing the 5B pipeline to 13.06s at 720p/5s and making it 120x faster than Wan 2.2-A14B on one H100. Overall, our hybrid design recovers softmax-level expressiveness at substantially reduced cost, unlocking scalable long, high resolution video generation.",
+      "summary_zh": "",
+      "authors": [
+        "Junsong Chen",
+        "Jincheng Yu",
+        "Yitong Li",
+        "Shuchen Xue",
+        "Haozhe Liu",
+        "Jingyu Xin",
+        "Yuyang Zhao",
+        "Tian Ye",
+        "Zhangjie Wu",
+        "Zian Wang",
+        "Daquan Zhou",
+        "Ping Luo",
+        "Song Han",
+        "Enze Xie"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:36:05+00:00",
+      "updated": "2026-07-23T17:36:05+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21553v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21553v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21546v1",
+      "title_en": "UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging",
+      "title_zh": "",
+      "summary_en": "Multimodal based approaches often outperform single modality approaches in downstream tasks as the different modalities provide complementary information, yet acquiring paired clinical data remains a significant challenge in real world scenarios. While cross-modal knowledge distillation addresses this, existing methods often struggle with large modality gaps and the propagation of noise from uncertain source-domain predictions. To overcome these challenges, we propose UnDA, an anchor-guided framework for unpaired cross-modal distillation. Our approach introduces a backbone-agnostic Alignment Module that extracts semantically structured class tokens via an attention based pooling mechanism. To ensure robust knowledge transfer, we propose Uncertainty-Weighted Optimal Transport (UCT-OT), which dynamically weights feature-level alignment based on prediction confidence, effectively suppressing noisy supervision. Furthermore, a per-class ProtoNCE objective maintains stable prototype memories to enforce global discriminability across unpaired batches. Evaluations on representative segmentation tasks under strictly unpaired settings show consistent improvements in accuracy and boundary precision in the target modality, demonstrating that meaningful structural knowledge can be transferred across heterogeneous data sources without paired datasets.",
+      "summary_zh": "",
+      "authors": [
+        "Rafsan Jany",
+        "Shadab Tanjeed Ahmad",
+        "Ahsan Bulbul",
+        "Tahsinul Islam",
+        "Md Azam Hossain",
+        "Abu Raihan Mostofa Kamal"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:33:29+00:00",
+      "updated": "2026-07-23T17:33:29+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21546v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21546v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2607.21545v1",
+      "title_en": "Towards Robust Iris Recognition Through Occlusion Identification and Conditional Diffusion-Based Reconstruction",
+      "title_zh": "",
+      "summary_en": "Iris recognition is a reliable biometric approach that identifies individuals using the distinctive and stable texture of the iris. However, recognition performance can degrade when discriminative iris texture is partially occluded by eyelids, eyelashes, specular reflections, or other acquisition artifacts. Existing approaches often perform recognition directly on degraded samples or rely only on the remaining visible iris region, which may be inadequate when substantial texture is corrupted. To address this limitation, we propose an occlusion-aware iris recognition framework with three sequential modules: occlusion-type identification, diffusion-based reconstruction, and deep-learning-based recognition. First, a residual 2D CNN-based network determines whether an iris image is non-occluded or belongs to one of the controlled occlusion categories. Second, the occluded image, binary mask, and predicted occlusion type condition a denoising diffusion probabilistic model to reconstruct the corrupted region. Finally, VGG19-HPMNet, a modified VGG19 model with horizontal pyramid mapping, extracts discriminative global and part-wise local iris features for recognition. Experiments on the CASIA-Iris-Thousand dataset under a controlled synthetic-occlusion protocol show that the proposed framework improves iris recognition performance by identifying the occlusion type, reconstructing masked regions, and re-evaluating the restored iris samples.",
+      "summary_zh": "",
+      "authors": [
+        "Kamrul Hasan",
+        "Mylene C. Q. Farias",
+        "Oleg V. Komogortsev"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-07-23T17:32:20+00:00",
+      "updated": "2026-07-23T17:32:20+00:00",
+      "abs_url": "https://arxiv.org/abs/2607.21545v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21545v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
       "id": "2607.21529v1",
       "title_en": "ElasticTTT: Prior-Preserving Test-Time Tuning for Video Editing",
       "title_zh": "",
@@ -865,407 +1183,9 @@
       "pdf_url": "https://arxiv.org/pdf/2607.21125v1",
       "translation_status": "translation_error",
       "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21118v1",
-      "title_en": "The Second LoViF 2026 Challenge on Real-World All-in-One Image Restoration: Methods and Results",
-      "title_zh": "",
-      "summary_en": "This paper presents a review of the second LoViF Challenge on Real-World All-in-One Image Restoration. The challenge aims to advance unified image restoration under diverse real-world degradation conditions, including blur, low-light, haze, rain, and snow. It provides a common benchmark for evaluating the restoration accuracy, robustness, and generalization capability of models across multiple degradation categories within a unified framework. The competition attracted 158 registered participants, and 20 teams were included in the final ranking after their submitted results were successfully reproduced and verified. This report provides a comprehensive analysis of the submitted solutions and corresponding results, highlighting recent advances in real-world all-in-one image restoration. The summarized methods and empirical findings reveal effective design strategies and establish an updated benchmark for future research in real-world low-level vision.",
-      "summary_zh": "",
-      "authors": [
-        "Xiang Chen",
-        "Hao Li",
-        "Jiangxin Dong",
-        "Jinshan Pan",
-        "Xin Li",
-        "Hongbo Ding",
-        "Junpeng Jiang",
-        "Xingyu Qiu",
-        "Yilian Zhong",
-        "Yuxiang Chen",
-        "Shibo Yin",
-        "Zixuan Huang",
-        "Yushun Fang",
-        "Xilei Zhu",
-        "Yahui Wang",
-        "Chen Lu",
-        "Xiaodong Zhou",
-        "Qingyue Cao",
-        "Changwei Gong",
-        "Jingyun Liu",
-        "Xingchen Yi",
-        "Hansen Shi",
-        "Ruiyi Liu",
-        "Jirui Xie",
-        "Tao Liu",
-        "Wenzhuo Ma",
-        "Hongzhen Li",
-        "Yongyong Chen",
-        "Zheng Zhou",
-        "Jingyong Su",
-        "Jie Liu",
-        "Haijin Zeng",
-        "Cheng Li",
-        "Peishuai Zha",
-        "Ziyi Wang",
-        "Jian Tang",
-        "Yan Chen",
-        "Long Bao",
-        "Heng Sun",
-        "Jiyuan Zhang",
-        "Shuai Liu",
-        "Wei Ding",
-        "Chengjun Guo",
-        "Yibin Huang",
-        "Xiaotao Wang",
-        "Dongqing Zou",
-        "Lei Lei",
-        "Xiaofeng Wang",
-        "Xiao Liu",
-        "Yulin Wu",
-        "Yuhan Zhao",
-        "Shurui Peng",
-        "Chao Ren",
-        "Yu-Kai Wang",
-        "Kosuke Shigematsu",
-        "Asuka Shin",
-        "Rong-Lin Jian",
-        "Cheng-Jun Kang",
-        "Jin-Hui Jiang",
-        "Jialin Zhou",
-        "Kuo Yuan",
-        "Songyu Zhang",
-        "E B Benson",
-        "Ashfaq Hussain",
-        "Pruthvikanth AC",
-        "Qirui Chen",
-        "Jinyuan Chen",
-        "Jun Zhang",
-        "Xu Zhang",
-        "Xuhui Cao",
-        "Jiaqi Ma",
-        "Laibin Chang",
-        "Yuchun Miao",
-        "Yichu Xu",
-        "Yuanzhi Yao",
-        "Shi Chen",
-        "Yuning Cui",
-        "Huan Zhang",
-        "Lefei Zhang",
-        "Saeed Ahmad",
-        "Ik Hyun Lee",
-        "Jun Young Park",
-        "Ji Hwan Yoon",
-        "Shangquan Sun",
-        "Behrooz Nobahar-Moghanlou",
-        "Majid Edalatjou",
-        "Karim Shahi-Niyar",
-        "Ruibo Zhang",
-        "Dexiang Hong",
-        "Xinyan Liu",
-        "Shengeng Tang",
-        "Weidong Chen"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:54:25+00:00",
-      "updated": "2026-07-23T09:54:25+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21118v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21118v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21105v1",
-      "title_en": "HalluScope: Fine-grained Hallucination Diagnosis for Multimodal Large Language Models",
-      "title_zh": "",
-      "summary_en": "Although Multimodal Large Language Models have achieved strong performance across a wide range of vision-language tasks, they still suffer from hallucinations, where model outputs become inconsistent with the visual content, textual context, or commonsense knowledge. Existing studies primarily address this problem through coarse-grained detection. However, these approaches often provide insufficient diagnostic information for understanding hallucination types and supporting downstream hallucination mitigation. To bridge this gap, we propose fine-grained hallucination diagnosis for MLLMs, a new unified task that jointly performs hallucination detection, classification, and interpretable explanation generation. We develop an automated data generation pipeline and construct HalluScope-30K, a large-scale diagnostic dataset covering eight sources and five task categories. Based on this dataset, we design a multi-granular joint reward function and train two diagnosis models, HalluScope-4B and HalluScope-8B, which achieve state-of-the-art performance on both the MHALO benchmark and our fine-grained hallucination classification benchmark. Notably, detection and classification are mutually beneficial under joint optimization. Furthermore, diagnosis-driven feedback experiments show that the fine-grained diagnostic explanations produced by our model effectively guide target models to correct their hallucinations, with full diagnosis substantially outperforming all baselines on both Qwen3-VL-8B-Instruct and LLaVA-1.5-7B.",
-      "summary_zh": "",
-      "authors": [
-        "Weilin Jin",
-        "Mingyu Wang",
-        "Wenbo Li",
-        "Haoyang Huang",
-        "Yifan Wu",
-        "Ying Li",
-        "Gang Huang",
-        "Zhonghai Wu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:35:32+00:00",
-      "updated": "2026-07-23T09:35:32+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21105v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21105v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21089v1",
-      "title_en": "Loss Landscape Topology Reveals Why Simple Baselines are Competitive at 3D Point Cloud Segmentation Under Class Imbalance",
-      "title_zh": "",
-      "summary_en": "Semantic segmentation of 3D point clouds faces severe class imbalance, yet the effectiveness of specialized imbalance-aware methods from 2D computer vision remains unclear in 3D contexts. We systematically evaluate 11 imbalance mitigation approaches across datasets with extreme (641:1) and moderate (56:1) imbalance ratios, revealing a surprising finding: standard cross-entropy with uniform weighting achieves competitive performance, typically within 0.8-3.3% mIoU of specialized methods across architectures and datasets. Through multifaceted mechanistic analysis of error patterns, decision boundaries, and the geometry of the optimization landscape, our analyses suggest that imbalance severity shapes the topology, creating narrow solution basins under extreme imbalance and flat plateaus under moderate imbalance. This appears to constrain the effectiveness of loss-level modifications, as all methods must navigate these geometric constraints. Our findings offer practical guidance; standard cross-entropy provides a robust baseline, with specialized methods offering modest improvements (0.8-3.3% mIoU) that vary by architecture and dataset but risk substantial degradation if poorly tuned. This work provides the first mechanistic explanation for why techniques proven effective in 2D do not readily transfer to point-based 3D point cloud segmentation, validated across two representative architectures.",
-      "summary_zh": "",
-      "authors": [
-        "Antonis Savva",
-        "Christos Kyrkou",
-        "Theocharis Theocharides"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:19:31+00:00",
-      "updated": "2026-07-23T09:19:31+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21089v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21089v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21085v1",
-      "title_en": "Geo3R: Mitigating Spatial Reasoning Hallucination in Multimodal Large Language Models",
-      "title_zh": "",
-      "summary_en": "Despite remarkable progress in visual understanding, Multimodal Large Language Models (MLLMs) remain prone to hallucinations when reasoning about spatial relationships, often producing judgments that contradict the true 3D structure of the scene. Though several existing works have proposed to mitigate hallucinations, our analysis indicates that they show limited effectiveness in spatial reasoning, as they fail to bridge the fundamental gap between 2D visual representations and 3D spatial reality. Based on this finding, we define hallucinations arising from insufficient spatial structure modeling as spatial reasoning hallucination, a subcategory of relation hallucination that existing mitigation methods fail to address. We further identify three typical scenarios where such hallucinations frequently occur: perspective effects, object orientation, and viewpoint changes. To this end, we propose Geo3R, a training-free, plug-and-play framework that incorporates geometric evidence and structured 3D reasoning to mitigate spatial reasoning hallucination. Experiments on three benchmarks, covering 18 tasks across all three scenarios, show that Geo3R substantially reduces spatial reasoning hallucination across diverse MLLMs without additional training, outperforming existing models and methods.",
-      "summary_zh": "",
-      "authors": [
-        "Mingyu Wang",
-        "Weilin Jin",
-        "Wenbo Li",
-        "Haoyang Huang",
-        "Tong Jia",
-        "Ying Li"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:15:08+00:00",
-      "updated": "2026-07-23T09:15:08+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21085v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21085v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21078v1",
-      "title_en": "The RealDefocus Benchmark for Defocus Deblurring",
-      "title_zh": "",
-      "summary_en": "Single-Image Defocus Deblurring (SIDD) aims to recover an all-in-focus image from a single defocused observation, but rigorous and reproducible evaluation remains challenging due to the scarcity of realistic, high-resolution datasets with well-aligned defocused/sharp pairs and standardized protocols. We build on RealDefocus, a benchmark derived from the real-world RealBokeh dataset originally proposed for Bokeh Rendering. RealDefocus provides paired defocused inputs and sharp ground truth images, predefined training/validation/test splits, and a unified evaluation framework for comparing image restoration and neural rendering approaches. We further outline a benchmarking protocol with cross-dataset validation to assess reconstruction quality and generalization. The project page is publicly available at: www.github.com/TimSeizinger/RealDefocus-Benchmark.",
-      "summary_zh": "",
-      "authors": [
-        "Tim Seizinger",
-        "Zhuyun Zhou",
-        "Radu Timofte"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:09:58+00:00",
-      "updated": "2026-07-23T09:09:58+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21078v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21078v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21076v1",
-      "title_en": "C-PTQ: Fisher-weighted Channel-wise Sensitivity for Post-training Quantization of MLLMs",
-      "title_zh": "",
-      "summary_en": "Multimodal large language models (MLLMs) require huge memory and computational costs, which limits their practical deployment. Post-training quantization (PTQ) techniques offer an efficient solution for model compression and inference acceleration. Yet, the quantized model faces performance degradation due to outlier channels, which are highly sensitive to quantization and substantially impair activation fidelity and task accuracy. To protect these salient channels during quantization, existing PTQ methods leverage modality- or token-level metrics to guide channel-wise scaling (CWS) of LLM decoders. However, these orthogonal measurements fail to capture channel-wise impacts on task-specific loss, and the misalignment between importance and scaling factors ultimately leads to suboptimal performance. To address this issue, we propose C-PTQ, a unified channel-wise PTQ method that harmonizes task-specific loss perturbation and quantization error. Motivated by second-order derivatives, we design a Fisher-weighted objective as a tractable Hessian approximation, seamlessly injecting task sensitivity into the scaling process. Notably, we achieve state-of-the-art performance without auxiliary modules like LoRA, thereby maintaining high efficiency. Experiments on Qwen2.5VL, InternVL2 and LLaVA-OV across 8 benchmarks demonstrate our effectiveness in both weight-only and weight-activation settings.",
-      "summary_zh": "",
-      "authors": [
-        "Jiameng Li",
-        "Han Zhou",
-        "Matthew B. Blaschko"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:08:57+00:00",
-      "updated": "2026-07-23T09:08:57+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21076v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21076v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21072v1",
-      "title_en": "Show, Don't Tell: Evaluating Spatial Cognition in Generative Pixels Rather Than LLM Text",
-      "title_zh": "",
-      "summary_en": "Spatial intelligence is essential for agents to move from static semantic understanding toward interacting with the physical world. Many spatial tasks are grounded in continuous visual scenes, where locations, regions, and paths are more naturally expressed by pointing, marking, or drawing than by reporting precise coordinates or discrete textual symbols. Yet existing spatial reasoning benchmarks usually require coordinates, options, or text, creating an answer-interface mismatch for image-generation models. This makes it difficult to evaluate image-generation models under the same task semantics as text-output VLMs, despite their ability to externalize spatial judgments directly in pixel space. We propose ProVisE (Protocolized Visual Evaluation), a benchmark-agnostic framework that elicits protocol-constrained visual answers from image-generation models and parses them into structured predictions compatible with original metrics. ProVisE also includes an Agentic builder that constructs and validates task-specific protocols for new benchmarks. We further introduce SpatialGen-Bench, a curated diagnostic benchmark of 470 samples across 14 spatial subtasks, four capability levels, and diverse answer forms. We evaluate representative text-output VLMs and image-generation models in a unified setting and validate Agentic protocol construction on six external spatial benchmarks. Results show that image-generation models are competitive when spatial answers can be externalized directly in pixel space, while text-output VLMs retain a clear advantage in compositional spatial reasoning. These findings reveal complementary strengths of pixel-space expression and text-based reasoning and establish a metric-compatible testbed for studying spatial cognition in image-generation models.",
-      "summary_zh": "",
-      "authors": [
-        "Xu Wang",
-        "Kaixiang Yao",
-        "Miao Pan",
-        "Xiaohe Zhou",
-        "Xuanyu Liu",
-        "Wenqi Zhang",
-        "Xuhong Zhang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:04:48+00:00",
-      "updated": "2026-07-23T09:04:48+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21072v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21072v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21071v1",
-      "title_en": "TransBiolab: A Real-World Multi-View Dataset of Cluttered Transparent Biomedical Objects",
-      "title_zh": "",
-      "summary_en": "Autonomous biomedical laboratories increasingly rely on visual perception to recognize, localize, and manipulate transparent plasticware, yet high-quality real-world datasets for this setting remain limited. The scarcity of domain-relevant data is particularly restrictive in cluttered multi-object scenes, where mutual occlusion and view-dependent appearance changes remain challenging even for contemporary visual foundation models. Existing transparent-object datasets have advanced segmentation, depth, and pose estimation, but they usually do not evaluate the combined setting of multi-object clutter, occlusion, and calibrated multi-view capture that characterizes real laboratory manipulation scenes. To address this gap, we present TrainsBiolab, a real-world RGB-D dataset of cluttered transparent biomedical objects captured as calibrated multi-view sequences. TrainsBiolab contains 161,315 frames from 98 scenes and 1.03M instance annotations over 15 laboratory object types, including 6D poses, full and visible masks, depth, and per-frame camera calibration. The dataset is organized along three axes that reflect operational difficulty: object category, the total number of objects in a frame, and camera viewpoint. We further define dataset-centric benchmarks for segmentation, depth estimation and completion, and 6D pose estimation, and report a system-level robot manipulation evaluation enabled by the released annotations and calibrations. By focusing on repeated transparent instances, clutter, and multi-view laboratory capture, TrainsBiolab provides a resource for segmentation, depth estimation, 6D pose estimation, and multi-view reasoning in autonomous laboratory manipulation. Project page: https://dualtransparency.github.io/TransBiolab/.",
-      "summary_zh": "",
-      "authors": [
-        "Ke Ma",
-        "Yifei Wang",
-        "Meng Wang",
-        "Tian Xia"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.MM",
-        "cs.RO"
-      ],
-      "published": "2026-07-23T09:04:11+00:00",
-      "updated": "2026-07-23T09:04:11+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21071v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21071v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21068v1",
-      "title_en": "Counterfactual Explainability Framework With CycleGAN And Counterfactual-Classifier Alignnment Score for Retinal Disease Classification",
-      "title_zh": "",
-      "summary_en": "Automated detection of vision impairing retina-based ocular conditions from fundus images is important for early screening, timely referral and reducing dependency on specialist-only assessment, for which neural network-based deep learning (DL) models have been widely utilized. However, explainability of the DL frameworks remains a major bottleneck for clinical adoption, particularly when model decisions are not linked to retinal regions that are clinically meaningful. To address this issue, this study presents CounterFundus, a novel CycleGAN-driven counterfactual explainability framework, integrating EfficientNet-B5-based retinal disease detection with visually interpretable disease-to-normal fundus image translation. For each pathological image, the counterfactual yielded by the CycleGAN generator represents an estimated healthy counterpart and the resultant difference map is utilized to localize disease-associated retinal changes. Unlike conventional post-hoc saliency methods, CounterFundus provides counterfactual explanations through visually plausible disease-to-normal retinal translation. Thereafter, to quantify the spatial agreement between counterfactual difference maps and classifier saliency, the Counterfactual-Classifier Alignment Score (CCAS) is introduced, embedding Spearman correlation, binary IoU and pointing accuracy into a single assessment protocol. To this end, EigenCAM-aligned evaluation demonstrates that the generated counterfactual explanations remain spatially consistent with classifier-relevant retinal evidence across all CCAS dimensions. Along with that, ablation studies further confirm that CCAS-filtered counterfactual augmentation improves the downstream classification performance in fundus images, establishing CounterFundus as a clinically-grounded, explainable artificially intelligence (XAI) framework for retinal disease detection.",
-      "summary_zh": "",
-      "authors": [
-        "Kritanu Chattopadhyay",
-        "Sayanjit Singha Roy",
-        "Soumya Chatterjee"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.CV"
-      ],
-      "published": "2026-07-23T09:00:31+00:00",
-      "updated": "2026-07-23T09:00:31+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21068v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21068v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21065v1",
-      "title_en": "Do Pathology Vision-Language Models Truly See Pathology?",
-      "title_zh": "",
-      "summary_en": "Pathology vision-language models (VLMs) have recently progressed rapidly and are commonly evaluated by answer accuracy on pathology VQA benchmarks. However, we dig into current evaluations and identify three overlooked issues: 1) Visual evidence is not always necessary. For instance, Gemini-3-Pro achieves 53.5% average accuracy across 5 VQA benchmarks without any visual input. 2) Domain training can improve accuracy without proportional gains in visual binding. Compared with Qwen2.5-VL-7B, Patho-R1-7B exhibits a 5.8-point lower multimodal gain and a 3.7-point lower attention IoU. 3) Entity-level attention is diffuse and weakly query-specific. On PathVG, attention maps remain highly correlated across different entity queries. These issues can lead to substantial misjudgments of pathology VLMs' actual multimodal capabilities. To this end, we present PathBind, a benchmark comprising 2,600 samples: PathBind-VQA with 1,500 questions across six dimensions, PathBind-PTA with 600 questions from a private pathology teaching atlas, and PathBind-Grounding with 500 expert-curated region-level samples. Each component undergoes task-specific automated filtering and expert review to reduce textual shortcuts and improve entity-region correspondence. We evaluate 18 representative VLMs on VQA samples of PathBind and five existing pathology VQA benchmarks, and further evaluate 10 VLMs on PathBind-Grounding and PathVG. Results show that current pathology VLMs still exhibit a substantial gap between answer-side performance and visual-semantic binding.",
-      "summary_zh": "",
-      "authors": [
-        "Chengyang Zhang",
-        "Wenchuan Zhang",
-        "Bo Li",
-        "Xinyu Liu",
-        "Jiaming Yang",
-        "Mengran Li",
-        "Chenxun Deng",
-        "Jie Chen",
-        "Yang Zhang",
-        "Wei Ju",
-        "Yuhao Yi",
-        "Hong Bu",
-        "Jiancheng Lv"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T08:59:11+00:00",
-      "updated": "2026-07-23T08:59:11+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21065v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21065v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21061v1",
-      "title_en": "MVEI & EmObserver: Empowering MLLM-Oriented Visual Emotional Intelligence via Emotion Statement Judgement",
-      "title_zh": "",
-      "summary_en": "Affective Image Content Analysis (AICA) aims to recognize and understand emotions elicited by visual content, representing an indispensable step toward Artificial General Intelligence (AGI). However, despite the rapid progress of Multimodal Large Language Models (MLLMs), systematic evaluation of their visual emotional intelligence remains largely absent from recent model releases. We attribute this gap to a structural mismatch between conventional AICA paradigms and the open-ended, instruction-driven nature of MLLMs, where further analysis reveals four major limitations: omission of plausible responses, limited emotion taxonomies, neglect of contextual factors, and labor-intensive annotation. To overcome these barriers, we introduce Emotion Statement Judgement (ESJ), a statement-verification formulation that preserves the expressiveness of the input space while constraining outputs to discriminative judgements. We further develop INSETS, a labor-efficient pipeline that instantiates ESJ at scale by constructing INSETS-462k and supporting MVEI, a rigorously refined benchmark spanning sentiment polarity, emotion interpretation, scene context, and perception subjectivity. Beyond evaluation, we build EmObserver, an emotion-oriented MLLM optimized on ESJ through an elaborate multi-stage recipe. Extensive evaluation of broad-spectrum MLLMs on MVEI reveals fine-grained insights into current artificial visual emotional intelligence, while experiments on multiple AICA benchmarks demonstrate the accuracy, generalization, and reasoning faithfulness of EmObserver. Collectively, these results establish ESJ as a practical formulation, MVEI as a comprehensive benchmark, and EmObserver as an advanced baseline for advancing MLLM-oriented visual emotional intelligence. Code will be released at: https://github.com/wdqqdw/EmObserver.",
-      "summary_zh": "",
-      "authors": [
-        "Daiqing Wu",
-        "Dongbao Yang",
-        "Jiashu Yao",
-        "Hongrui Zhang",
-        "Can Ma",
-        "Yu Zhou",
-        "Sicheng Zhao"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T08:52:11+00:00",
-      "updated": "2026-07-23T08:52:11+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21061v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21061v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21057v1",
-      "title_en": "Achieving Text-based Person Retrieval with Any Granularity",
-      "title_zh": "",
-      "summary_en": "Text-based person retrieval faces a critical but under-explored challenge: the inherent uncertainty of query granularity in real-world scenarios. This paper introduces a new paradigm, Text-based Person Retrieval with Any Granularity, and provides a systematic solution. First, we formalize a five-level granularity spectrum and construct UFine6926-MG, a high-quality multi-grained dataset annotated comprehensively at all granularities via a novel Multi-grained Text Annotation Engine. Second, acknowledging that coarse queries naturally correspond to multiple valid candidates, we propose MG-Eval, a holistic evaluation benchmark with progressively detailed texts and cross-identity labels that reflect real-world semantics, alongside tailored evaluation metrics and protocols. Third, after a comprehensive diagnosis reveals the systemic limitations of existing research, we propose the Cross-modal Multi-grained Aligning and Matching (CMAM) framework. CMAM achieves granularity-aware retrieval through: 1) orthogonal-expert perception to disentangle granularity-specific features; 2) probabilistic alignment to model many-to-many matches under query uncertainty; and 3) granularity-consistent reasoning to steer feature learning via joint cross-modal granularity verification. Experiments demonstrate that CMAM significantly outperforms state-of-the-art methods across all granularity levels. This work establishes a foundational benchmark and a robust baseline, paving the way for more practical person retrieval systems.",
-      "summary_zh": "",
-      "authors": [
-        "Jialong Zuo",
-        "Hanyu Zhou",
-        "Dongyue Wu",
-        "Yongtai Deng",
-        "Mengdan Tan",
-        "Nong Sang",
-        "Changxin Gao",
-        "Xiang Bai"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T08:42:25+00:00",
-      "updated": "2026-07-23T08:42:25+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21057v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21057v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2607.21050v1",
-      "title_en": "HyperImageNet: A Large-Scale High-Spatial Resolution Hyperspectral Imagery Classification Benchmark",
-      "title_zh": "",
-      "summary_en": "We present HyperImageNet, a large-scale benchmark for fine-grained hyperspectral land-cover understanding. The dataset contains 26,084 airborne hyperspectral image patches with 224 spectral bands and 138 fine-grained land-cover categories. Unlike existing datasets, HyperImageNet provides raw imagery, pixel-level semantic labels, and object-level instance masks, supporting both semantic and instance segmentation. Furthermore, we establish an open-environment benchmark with strict spatial separation to evaluate representative methods and the HyperFree foundation model. Experimental results demonstrate the effectiveness of HyperImageNet for fine-grained hyperspectral understanding and open-environment remote sensing research.",
-      "summary_zh": "",
-      "authors": [
-        "Chuguang Zeng",
-        "Jingtao Li",
-        "Yinhe Liu",
-        "Yanfei Zhong"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-07-23T08:34:01+00:00",
-      "updated": "2026-07-23T08:34:01+00:00",
-      "abs_url": "https://arxiv.org/abs/2607.21050v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.21050v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
     }
   ],
-  "last_updated": "2026-07-24T01:27:18.975272+00:00",
+  "last_updated": "2026-07-25T01:27:45.187085+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
