@@ -1,6 +1,279 @@
 {
   "papers": [
     {
+      "id": "2609.22086v1",
+      "title_en": "Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design",
+      "title_zh": "",
+      "summary_en": "Professional graphic design is a long-horizon agentic task in which structured, editable artifacts emerge from many interdependent actions, yet outcomes admit no reliable programmatic oracle. We introduce a continual adaptation framework in which a frozen frontier model operates professional design software through more than 230 tools, while an external procedural memory of natural-language skills accumulates and refines reusable design procedures from experience. The memory widens by acquiring procedures for recurring uncovered subtasks and deepens by revising existing procedures against their own successful and failed executions, while a matched replay gate admits only changes that repair failures without regressing observed successes. Five rounds over 1,406 real user briefs and 1,869 automatically graded trajectories, with no weight updates and no human labels, grow the bank from 76 documentation-derived skills to 139 and raise GenEval2 execution success on Claude-Sonnet-4 from 72.7% to 99.3% (+11.99 points in generation quality), with 61.8% and 67.6% win rates against the no-skill agent across four specialized design benchmarks on Claude-Sonnet-4 and Claude-Opus-4.6. We further show the two mechanisms are effective in combination: on 200 held-out briefs from user-traffic benchmark, widening or deepening alone reaches a 49.4% / 48.6% win rate over the no-skill agent, while their combination reaches 58.5% (p = 0.025). Procedural memory offers a practical route to continual adaptation of agents under noisy, unverifiable feedback.",
+      "summary_zh": "",
+      "authors": [
+        "Hongyang Du",
+        "Lan Yan",
+        "Christian Flores",
+        "Asim Kadav"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-09-18T17:59:56+00:00",
+      "updated": "2026-09-18T17:59:56+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.22086v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22086v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.22083v1",
+      "title_en": "MintAct: A Unified Visual Agent for Digital Environments",
+      "title_zh": "",
+      "summary_en": "We present MintAct, a family of vision-language models that unifies UI grounding, multi-step navigation across mobile, desktop, and web, and visual tool use, trained at 2B, 4B, and 8B scales. Through careful design of our environments, data, and training recipes, MintAct models match the performance of per-domain specialists across all of these capabilities. To enable this, we develop a scalable environment and reinforcement learning (RL) infrastructure. On the environment side, we host hundreds of concurrent instances across heterogeneous per-domain backends, serving both trajectory data collection and online RL. To enable efficient and scalable RL training, an asynchronous framework keeps explicit control over the cross-domain training distribution and remains stable under noisy environment feedback and off-policy drift. Experimental results show that MintAct achieves state-of-the-art performance (48.9 on OSWorld-Verified) across a wide range of benchmarks at comparable model sizes.",
+      "summary_zh": "",
+      "authors": [
+        "Mingfei Gao",
+        "Rui Tian",
+        "Haiming Gang",
+        "Bohan Zhai",
+        "Le Zhang",
+        "Yuanzheng Gong",
+        "Di Feng",
+        "Ege Özsoy",
+        "Kaixin Ma",
+        "Vishwesh Kirthivasan",
+        "Oğuzhan Fatih Kar",
+        "Roman Bachmann",
+        "Anders Boesen Lindbo Larsen",
+        "Afshin Dehghan"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T17:59:34+00:00",
+      "updated": "2026-09-18T17:59:34+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.22083v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22083v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.22069v1",
+      "title_en": "OmniVBench: A Benchmark and Large-Scale Dataset for Omni Reference-to-Video Generation",
+      "title_zh": "",
+      "summary_en": "Reference-to-video (R2V) generation is evolving toward increasingly general and versatile reference control, giving rise to the emerging paradigm of omni R2V generation. However, existing benchmarks fall short of these emerging capabilities: their test cases cover limited reference types and compositions, and their evaluation protocols largely assess holistic reference consistency, overlooking whether reference factors are properly preserved, disentangled, and routed. Meanwhile, the high cost of constructing omni R2V training data makes suitable training resources scarce. To address these gaps, we introduce OmniVBench and the Omni-R2V Dataset for evaluating and training omni R2V models. OmniVBench expands R2V evaluation across broader reference types, fine-grained control tasks, and richer reference compositions, covering 7 task families and 18 fine-grained tasks spanning content, motion, style, structure, narrative, and multi-reference settings. We introduce factor-grounded evaluation with 12,172 case-specific checklist items, assessing whether intended reference factors are faithfully preserved, correctly disentangled and bound to their targets, and properly realized according to the instruction. We further introduce the Omni-R2V Dataset, bringing industrial-grade training resources for diverse R2V tasks to the broader research community. Drawing primarily on a large-scale corpus of professional video footage, it comprises 340K processed training samples spanning diverse reference types and multi-reference compositions. We develop task-specific pipelines for reference-target pair construction, offering a practical and scalable recipe for omni R2V data construction. Extensive evaluation of advanced open- and closed-source R2V models reveals clear performance gaps across task families and evaluation dimensions on OmniVBench, highlighting remaining limitations of current R2V models.",
+      "summary_zh": "",
+      "authors": [
+        "Wenxue Li",
+        "Peiyan Guan",
+        "Haoyang Jiang",
+        "Junxian Cai",
+        "Hualuo Liu",
+        "Chunjie Zhang",
+        "Chong Guan",
+        "Kai Huang",
+        "Songlian Li",
+        "Taiyi Wu",
+        "Yongjian Yu",
+        "Xiaotong Zhao",
+        "Alan Zhao",
+        "Eric Liu",
+        "Xi Chen",
+        "Yu Liu",
+        "Lei Zhu"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T17:55:49+00:00",
+      "updated": "2026-09-18T17:55:49+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.22069v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22069v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.22060v1",
+      "title_en": "Traffic Sign Recognition for Autonomous Driving Using Branched YOLOv2 and Geometric Features",
+      "title_zh": "",
+      "summary_en": "Traffic sign recognition (TSR) is an important perception task for autonomous driving and advanced driver-assistance systems, where a system must both localize traffic signs and determine their semantic classes efficiently. This work presents a TSR system based on YOLOv2 for simultaneous detection and classification. Two complementary modifications are studied. First, YOLOv2 is extended with intermediate prediction layers, forming a branched architecture that can terminate inference early for easy cases and reduce computation time. Both whole-image and cell-wise branching strategies are investigated. Second, geometric information is introduced to reduce classification errors between visually similar signs. An unsupervised Bayesian image-segmentation method produces binary representations that are compared with class-specific geometric templates inside YOLOv2 bounding boxes. This information is used either during inference or as an additional signal during training. A dedicated dataset is constructed by combining GTSDB and GTSRB samples using seamless cloning and controlled image transformations. Experiments cover ten traffic-sign classes, with 3,000 training and 300 test samples. The selected branched architecture reports 0.647 s runtime and 0.680 mAP, compared with 0.6607 s and 0.680 mAP for baseline YOLOv2. Geometric verification during inference increases mAP to 0.713, while the geometric-feature training variant achieves 0.697 mAP with a reported runtime of 0.6608 s.",
+      "summary_zh": "",
+      "authors": [
+        "Arefeh Rezaei"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T17:52:00+00:00",
+      "updated": "2026-09-18T17:52:00+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.22060v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22060v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.22040v1",
+      "title_en": "PRIME: Perception Feedback with Situational Memory Embeddings in VLA Models",
+      "title_zh": "",
+      "summary_en": "Current Vision-Language-Action (VLA) models for autonomous driving operate primarily through feedforward inference across the perception--reasoning--planning hierarchy. While modern architectures maintain temporal recurrence within the perceptual module, early perception remains blind to downstream reasoning and navigation goals, processing visual inputs agnostically without prioritizing cues informed by prior decisions. To bridge this gap, this paper introduces PRIME, a learned feedback mechanism that conditions the VLA perceptual queries on a novel Situational Memory. By aggregating latent representations of past perception, reasoning, navigation goals, and predicted behaviors across an L-step window via cross-attention, PRIME enables intent-driven perceptual attention at minimal computational cost, adding only a maximum of 29.7M parameters (0.41% of the 7.3B-parameter base model). Evaluated on the Bench2Drive closed-loop benchmark, PRIME achieves a state-of-the-art Driving Score of 82.47 (+4.73 over ORION) and a Success Rate of 60.00% (+5.38 percentage points), the highest reported Driving Score among published VLAs trained on Think2Drive demonstrations.",
+      "summary_zh": "",
+      "authors": [
+        "Erik Deinzer",
+        "Naya Baslan",
+        "Luca Paparusso",
+        "Narunas Vaskevicius",
+        "Peter Knott",
+        "Luigi Palmieri"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "published": "2026-09-18T17:31:34+00:00",
+      "updated": "2026-09-18T17:31:34+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.22040v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22040v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21948v1",
+      "title_en": "GALA: Geometry-Aware Latent Action Modeling for Vision-Language-Action Model Pretraining across Embodiments",
+      "title_zh": "",
+      "summary_en": "Learning large-scale vision-language-action (VLA) models from multi-embodiment datasets remains challenging due to heterogeneous action spaces across end effectors. Although latent action models (LAMs) can learn embodiment-agnostic action representations from diverse video data, existing image-based LAMs often fail to capture fine-grained end-effector articulation, particularly finger-level geometric changes in human and dexterous robot hands. To address this limitation, we propose GALA, a Geometry-Aware Latent-Action modeling framework that augments image-based latent actions with 3D end-effector geometric motion. However, naively incorporating point clouds yields fine-grained action representations with limited shared semantics, hindering cross-embodiment pretraining. To address this issue, we introduce the Unified End-effector Motion Representation (UEMR), which preserves fine-grained motion information while improving the cross-embodiment generalizability of latent actions. Building upon UEMR, GALA combines visual latent actions that capture scene-level dynamics with geometric latent actions that capture shared fine-grained end-effector articulation, providing effective supervision for VLA pretraining from multi-embodiment data, including action-free ego-centric human videos. Experiments on fine-grained motion probing, cross-embodiment retrieval, and downstream VLA evaluation demonstrate GALA's effectiveness in modeling generalizable fine-grained motions across embodiments, achieving 68.3% RoboCasa-GR1 success rate and 75.5% real-world success rate. Code, appendix, and demos are available at https://puzhenyuan.github.io/GALA-website/.",
+      "summary_zh": "",
+      "authors": [
+        "Yichen Liu",
+        "Puzhen Yuan",
+        "Xiang Zhu",
+        "Yanjiang Guo",
+        "Jianyu Chen"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-09-18T16:05:03+00:00",
+      "updated": "2026-09-18T16:05:03+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21948v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21948v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21938v1",
+      "title_en": "Info3R: Information-Adaptive Test-Time Training for 3D Reconstruction",
+      "title_zh": "",
+      "summary_en": "Transformer-based models have recently achieved strong performance on 3D reconstruction from images, and recent works extend them to process video streams in an online manner for real-world deployment. However, existing methods overlook two key signals when handling long image streams: the importance of each incoming frame and the information saturation of the model's internal state. In this paper, we propose Info3R, a novel information-adaptive test-time training method for the online 3D reconstruction. We introduce an information-aware state update that modulates the state update strength based on the redundancy and informativeness of each incoming frame. To restore the state's plasticity -- its capacity to incorporate new observations -- we propose a dynamic state reset, triggered by the cumulative magnitude of state updates and the model's prediction confidence and accompanied by an anchor-to-world alignment. Our method achieves consistent improvements on camera pose estimation, video depth estimation, and 3D reconstruction, while substantially mitigating the performance degradation in the long sequence evaluation. Notably, on KITTI Odometry, our method achieves on average 1.68x lower ATE than LongStream, demonstrating its robustness on extended outdoor sequences.",
+      "summary_zh": "",
+      "authors": [
+        "Sunghyun Baek",
+        "Hanna Bae",
+        "Minchan Kwon",
+        "Junmo Kim"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T15:55:00+00:00",
+      "updated": "2026-09-18T15:55:00+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21938v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21938v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21903v1",
+      "title_en": "The Role of Radiometric Features in Cross-Site Leaf-Wood Segmentation of LiDAR Point Clouds",
+      "title_zh": "",
+      "summary_en": "Leaf-wood segmentation of individual trees from LiDAR point clouds is essential for quantitative structure models (QSMs) used in non-destructive biomass estimation. Existing segmentation methods typically exclude radiometric features (e.g., intensity, return number) to maximize cross-sensor compatibility. We challenge this design choice by evaluating cross-site and cross-platform generalization: training on the public Heidelberg dataset (terrestrial TLS, 1550nm) and testing on a novel dataset from Ontario, Canada (RPA-LS, 905nm). Results show that geometry-only methods - including state-of-the-art deep learning models trained on high-density LiDAR datasets - fail to generalize to the sparse, top-down geometry of aerial scans, achieving F1 scores <= 0.56. Incorporating radiometric features (intensity, return number, number of returns) improves F1 to 0.61, but more critically, increases wood recall by 119% from 0.16 to 0.35. Furthermore, geometry-only approaches often result in fragmented stem and branch components. We find that leveraging radiometric features preserves greater structural connectivity, resulting in more coherent architectures that are better suited for QSM reconstruction. We demonstrate that while geometric patterns are view-dependent and prone to overfitting scan patterns, radiometric features encode physical material properties that generalize across disparate sensors and environments.",
+      "summary_zh": "",
+      "authors": [
+        "Roman Kaharlytskyi",
+        "Derek T. Robinson",
+        "Roberto Guglielmi"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T15:31:39+00:00",
+      "updated": "2026-09-18T15:31:39+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21903v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21903v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21887v1",
+      "title_en": "Catena: A Comprehensive Software Suite for Large-Scale Connectomics",
+      "title_zh": "",
+      "summary_en": "The gold standard datasets for mapping connectomes are electron microscopy volumes of densely labeled neural tissue at nanometer resolution. Yet reconstructing and proofreading neuronal arbors and annotating all synapses requires pipelining multiple software tools that are often fragmented, inconsistently maintained, or proprietary, hindering reproducibility and automation. Here, we introduce Catena, an open-source, comprehensive, developer-centric software suite for connectomics that integrates modules for 3D neuron and organelle segmentation, synapse detection, microtubule tracking, and neurotransmitter inference. Catena organizes its modules in composable, chunk-wise processing pipelines in a completely documented, extensible, and adaptable design. We further reduce compute and ground-truth data requirements with pretrained machine learning models, facilitating fine-tuning. Catena ships fully containerized modules that encapsulate evolving dependencies for consistent execution across workstations and clusters. By consolidating open components, shareable models, and containerized runtimes, Catena delivers a reproducible and scalable approach to mapping cellular connectomes from electron microscopy volumes. Code and documentation: https://github.com/Mohinta2892/catena.git",
+      "summary_zh": "",
+      "authors": [
+        "Samia Mohinta",
+        "Pedro Gómez-Gálvez",
+        "Shi Yan Lee",
+        "Daniel Franco-Barranco",
+        "Michael Clayton",
+        "Stephan Preibisch",
+        "Jan Funke",
+        "Albert Cardona"
+      ],
+      "categories": [
+        "cs.CV"
+      ],
+      "published": "2026-09-18T15:16:37+00:00",
+      "updated": "2026-09-18T15:16:37+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21887v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21887v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21879v1",
+      "title_en": "Benchmarking the Explanatory Quality of Open-Weight Vision-Language Models in Face Recognition",
+      "title_zh": "",
+      "summary_en": "Vision-Language Models (VLMs) have recently been proposed as promising tools for face recognition, as they can produce natural language explanations alongside similarity scores. This capability is considered appealing for face comparisons in forensic contexts, which require decisions to be transparent and auditable. However, existing evaluations of VLMs for that use case focus mostly on recognition accuracy, while the validity of generated explanations remains unquantified. In this work, we introduce a benchmarking framework for VLM-based face recognition that treats explanation quality as a core evaluation axis. We propose two criteria that explanations should satisfy: relevance, i.e., reliance on identity-stable facial features; and faithfulness, i.e., alignment with the visible image content without hallucinated features. We jointly develop a methodology enabling the quantification of relevance and faithfulness of evaluated models, based on constraining model outputs to a structured explanation format that supports automated querying and auditing. Using this framework, we benchmark several families of open-weight VLMs, jointly evaluating face verification accuracy and explanation quality. Our results highlight remaining shortcomings of produced explanations, and emphasize the need for such explanation quality metrics to get a complete picture of model performance. The proposed benchmark and open-source evaluation harness provide a foundation for proper benchmarking and future fine-tuning of explainable face recognition systems.",
+      "summary_zh": "",
+      "authors": [
+        "Laurent Colbois",
+        "Sébastien Marcel"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "published": "2026-09-18T15:06:02+00:00",
+      "updated": "2026-09-18T15:06:02+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21879v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21879v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
+      "id": "2609.21872v1",
+      "title_en": "Chronosphere: Space-Time Tessellation of Local Climate Experts",
+      "title_zh": "",
+      "summary_en": "We introduce Chronosphere, a spatio-temporal neural field that learns representations of climate. A central challenge in geographic representation learning is modeling environmental processes whose spatial and temporal complexity varies widely. Yet existing location encoders typically fix a single level of detail everywhere. Global bases such as spherical harmonics spread capacity uniformly across space and time. Localized bases resolve only predefined regions. Learned tessellations adapt, but are inefficient at representing higher frequencies. Chronosphere unifies these approaches, pairing an adaptive tessellation of learnable sites on the spacetime torus $S^2\\times S^1$ with a shared bank of local basis functions. Both where capacity is placed and how much detail each region carries adapt to the data, across space and time. Trained to reconstruct climatology, Chronosphere matches or leads state-of-the-art location encoders across spatial and temporal tasks, with the largest gains under spatial and temporal transfer.",
+      "summary_zh": "",
+      "authors": [
+        "Daniel Cher",
+        "Eric Xing",
+        "Kexing Li",
+        "Brian Wei",
+        "Isaac Corley",
+        "Nathan Jacobs"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-09-18T15:00:08+00:00",
+      "updated": "2026-09-18T15:00:08+00:00",
+      "abs_url": "https://arxiv.org/abs/2609.21872v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21872v1",
+      "translation_status": "translation_error",
+      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
+    },
+    {
       "id": "2609.21866v1",
       "title_en": "Morphology-Aware Ambiguity Learning for Wafer Defect Decision Support",
       "title_zh": "",
@@ -928,291 +1201,9 @@
       "pdf_url": "https://arxiv.org/pdf/2609.21455v1",
       "translation_status": "translation_error",
       "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21449v1",
-      "title_en": "ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling",
-      "title_zh": "",
-      "summary_en": "World Action Models bring the predictive capabilities of video models into robot action generation, providing a rich foundation for modeling future visual states. Tactile sensing complements this foundation with direct measurements of physical interaction. Some existing methods use tactile features as conditioning inputs without jointly predicting future tactile states, visual observations, and actions. Our key insight is that tactile signals, like video, provide observations of the evolving world state and should be modeled as future observations alongside video. We present ME-Dex-1.0 (MachEmbodied-Dex-1.0), a unified World Action Tactile Model for joint visual, tactile, and action learning. ME-Dex-1.0 adopts a Mixture-of-Transformers architecture comprising a Video Expert, a Tactile Expert, and an Action Expert, all trained with flow matching. We use shared attention connects the experts in intermediate layers, allowing action generation to draw on learned representations of visual and tactile dynamics during joint denoising. To support multi-source heterogeneous tactile inputs, a Canonical Hand Model and a Unified Tactile Autoencoder map tactile observations from different embodiments and sensing layouts into shared spatial and latent spaces. To address the limited availability of paired visual, tactile, and action data, we develop the Agentic Tactile Data Engine, an agent-based data production platform. It supplements RoboTwin and DexJoCo with tactile data recorded directly from force sensors during trajectory replay in simulation. Experiments on the RoboTwin, DexJoCo, and ManiFeel simulation platforms, together with real robot evaluations, demonstrate improved manipulation performance using both grippers and dexterous hands equipped with tactile sensing.",
-      "summary_zh": "",
-      "authors": [
-        "Xuancheng Zhang",
-        "Xuetao Liu",
-        "Qianying Tang",
-        "Jizhe Wang",
-        "Zhijing Cheng",
-        "Bochen Lin",
-        "Haoran Wen",
-        "Ming Li",
-        "Kun Zhan",
-        "Yu Liu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T08:00:06+00:00",
-      "updated": "2026-09-18T08:00:06+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21449v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21449v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21437v1",
-      "title_en": "Think Locally, Refine Globally for Memory-Efficient 3D Reconstruction",
-      "title_zh": "",
-      "summary_en": "We propose LoG-VGGT, a memory-efficient framework for long-sequence 3D reconstruction that balances local temporal modeling with global camera consistency. Instead of relying on full global attention, our method introduces cross-window attention at a small subset of transformer blocks, enabling effective information propagation across adjacent temporal windows while keeping memory usage bounded. To mitigate long-term pose drift, we further design a global camera consistency refinement module, where camera tokens interact with compact register tokens via cross-attention to enforce scene-level constraints across the entire sequence. This design enables joint optimization of camera representations and significantly improves long-horizon pose stability without incurring the high cost of sequence-wide attention. Extensive experiments demonstrate that LoG-VGGT achieves improved depth accuracy and robust camera pose estimation across multiple long-sequence benchmarks, while delivering competitive streaming reconstruction performance.",
-      "summary_zh": "",
-      "authors": [
-        "Jingke Zhou",
-        "Chenhang Ma",
-        "Zhizhou Zhong",
-        "Mingkai Liu",
-        "Zhuang Zhou",
-        "Yicheng ji",
-        "Binghua Su",
-        "Bo Cai",
-        "Xianliang Huang"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published": "2026-09-18T07:50:59+00:00",
-      "updated": "2026-09-18T07:50:59+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21437v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21437v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21424v1",
-      "title_en": "P$^3$-SAM: SAM with Perceptual Parallel Prompt for Few-Shot Strip Steel Surface Defect Segmentation",
-      "title_zh": "",
-      "summary_en": "Few-shot semantic segmentation (FSS) of strip steel surface defects (S$^3$D) has posed significant challenges distinct from natural scenes. Unlike natural images, S$^3$D task exhibits unique characteristics including low local contrast, uneven illumination, and complex fine-grained texture patterns. Although recent methods based on Segment Anything Model (SAM) have shown promise in FSS on natural images by leveraging SAM's powerful pre-trained representations, these unique industrial characteristics of S$^3$D images lead to performance drop when directly applying SAM to industrial defect scenarios. In this paper, we propose a novel Perceptual Parallel Prompt (P$^3$) framework that empowers SAM, creating the P$^3$-SAM model to address these challenges through two core strategies. First, we develop a Perceptual-Optimized Encoding (POE) strategy that enhances local contrast and preserves critical texture details for S$^3$D segmentation. Second, we introduce the Parallel Prompt Generator (PPG) strategy that simultaneously generates both semantic and spatial prompts, enabling comprehensive guidance for SAM's decoder across varying images. Extensive experiments on three few-shot S$^3$D benchmarks demonstrate that P$^3$-SAM achieves state-of-the-art performance, with particularly notable improvements of 12.00% in mIoU on Surface Defects-4i dataset.",
-      "summary_zh": "",
-      "authors": [
-        "Qian Xu",
-        "Hang Xiong",
-        "Anpeng Wang",
-        "Sam Kwong",
-        "Cong Zhang",
-        "Runmin Cong"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T07:38:17+00:00",
-      "updated": "2026-09-18T07:38:17+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21424v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21424v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21412v1",
-      "title_en": "When Online Adaptation Hurts: Parameter-Frozen Test-Time Ensembling for Continual Medical Image Segmentation",
-      "title_zh": "",
-      "summary_en": "Medical image segmenters often get worse when sites, scanner vendors, or protocols change. Continual test-time adaptation (CTTA) addresses this problem without target labels, but it can be impossible to update a model on a non-stationary stream and can lead to a lot of errors. We examine a more reasonable and meaningful alternative: parameter-frozen inference enhancement(PIE). We use a source-trained segmenter that learns about anatomy-preserving scale and flip views, maps their predictions back to the native location, and averages the probabilities. We do not modify the weights of the model or the normalization statistics. On a cardiac MRI stream from M\\&Ms, which is trained on vendor A and evaluated sequentially on vendors B, C, and D, PIE has 0.7786 mean Dice, compared to 0.7680 for source-only inference and 0.7388--0.7416 for five other online-adaptation baselines. The controlled ablations show that performance saturates at 28 views, and confidence weighting, class-prior correction, connected-component filtering, morphological refinement, and inter-slice smoothing have no effect or cause negative transfer. Qualitative results on cardiac MRI and fundus images are also consistent with the frozen ensemble keeping thinner and nested anatomical structures. These results provide a strong, stable baseline for medical CTTA and expose an important failure mode: adaptation and handcrafted refinement can be less reliable than carefully designed inference.",
-      "summary_zh": "",
-      "authors": [
-        "Ruijie Huang"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T07:21:32+00:00",
-      "updated": "2026-09-18T07:21:32+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21412v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21412v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21407v1",
-      "title_en": "Quantization-Aware Kalman Estimation for Diffusion Sampling",
-      "title_zh": "",
-      "summary_en": "Quantization offers a practical path to deploying diffusion models with reduced memory and computation, but aggressive compression can cause quantized outputs to deviate substantially from their full-precision counterparts. Sampling-stage correction methods seek to compensate for such deviations during sampling, but existing approaches rely primarily on local information and underexploit trajectory history, limiting their ability to correct errors that propagate across timesteps. In this work, we formulate sampling with a quantized denoiser as an online estimation problem, using the history of quantized denoiser outputs to recover the underlying full-precision outputs required by the sampler. We propose QuAKE, a Quantization-Aware Kalman Estimator that combines a smooth trajectory prior with a conditional Gaussian observation model. At each sampling step, QuAKE recursively updates the posterior over the output window in closed form and feeds its posterior mean to the sampler. QuAKE is a lightweight plug-and-play corrector that requires no modification to the quantized network and naturally supports arbitrary high-order multistep ODE samplers. Experiments across W4A4-quantized text-to-image diffusion models show that QuAKE consistently outperforms existing methods in reducing the distributional discrepancy from full-precision sampling.",
-      "summary_zh": "",
-      "authors": [
-        "Qitan Shi",
-        "Cheng Jin",
-        "Jiawei Zhang",
-        "Yuantao Gu"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T07:18:50+00:00",
-      "updated": "2026-09-18T07:18:50+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21407v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21407v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21402v1",
-      "title_en": "SIRA: Reasoning-Aware Surgical Instrument Segmentation via Query-Anchored Alignment",
-      "title_zh": "",
-      "summary_en": "Surgical instrument segmentation (SIS) plays a critical role in robotic assistance and surgical workflow analysis. However, most existing SIS methods formulate segmentation as a category-driven localization problem, limiting their ability to capture procedural context and task-dependent semantics in surgical workflows. We introduce Reasoning-Aware Surgical Instrument Segmentation (RA-SIS), a task formulation that frames segmentation as query-conditioned inference under surgical context. To benchmark this setting, we construct SurgRS, a surgical reasoning segmentation dataset consisting of 41,000 image-text pairs, which aligns instance-level masks with structured query-answer supervision to enable semantic grounding at the pixel level. Based on SurgRS, we propose Surgical Instrument Reasoning and Segmentation Assistant (SIRA), a multimodal framework that disentangles target-level and query-level semantics and integrates them with visual features through query-anchored dual alignment. By aligning query semantics with spatial features and segmentation prompts, SIRA enhances semantic-visual consistency in mask prediction. Extensive experiments on SurgRS demonstrate improvements over existing reasoning-aware baselines. Code is available at https://github.com/linxir226/SIRA.",
-      "summary_zh": "",
-      "authors": [
-        "Zhibo Zhang",
-        "Qijie Wang",
-        "Zengqiang Yan"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T07:17:12+00:00",
-      "updated": "2026-09-18T07:17:12+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21402v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21402v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21400v1",
-      "title_en": "A Scene Language Model for Open-Vocabulary Scene Mapping",
-      "title_zh": "",
-      "summary_en": "Open-vocabulary 3D scene mapping aims to build a persistent representation of the objects in an environment. Existing systems typically rely on engineered mapping pipelines to associate observations, merge information across views, and maintain a consistent scene representation over time. Many additionally store feature-rich object representations, such as embeddings or image crops, increasing the size and complexity of the persistent memory. We introduce SceneLM, a Scene-Language Model that directly maintains a textual scene map. The full scene is represented as a structured text list of objects, which serves as the model's only persistent memory. For each input image, the model reads the current scene state and updates the map by adding, editing, and removing objects. To learn this behavior, we introduce supervision tasks for iterative scene map maintenance together with an automatic annotation pipeline that generates training data from images without human labels. We evaluate SceneLM on both a language-grounded retrieval benchmark and a localization benchmark. Across both benchmarks, the model produces a scene map that achieves competitive performance with complete mapping systems built from dedicated perception and geometric modules while producing a scene representation that is 6-12x more compact. We further show that SceneLM can be run online on an edge device through experiments on a quadruped. These results show that a persistent open-vocabulary 3D scene map can be maintained directly by a single vision-language model using only a lightweight text representation. Training and inference code is available on https://goldengait.github.io/scenelm/.",
-      "summary_zh": "",
-      "authors": [
-        "Adam Lilja",
-        "Fabio Hübel",
-        "Siming He",
-        "Junsheng Fu",
-        "Claire Tomlin",
-        "Lars Hammarstrand",
-        "Jitendra Malik",
-        "Jonas Frey",
-        "Marco Pavone"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "published": "2026-09-18T07:16:18+00:00",
-      "updated": "2026-09-18T07:16:18+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21400v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21400v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21392v1",
-      "title_en": "Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction",
-      "title_zh": "",
-      "summary_en": "Natural audio-visual interaction is emerging as an important interface for AI assistants, allowing users to communicate through speech and vision rather than carefully composed text prompts. However, existing benchmarks of interactive capabilities still focus primarily on response quality, leaving a more fundamental question underexplored: can a model correctly infer the user's underlying demand from complex multimodal interaction? Real-world user demands are often underspecified in speech and must be inferred from multimodal cues and dialogue history. This inference is further complicated by ambiguous or disfluent expression and noisy acoustic environments. Conversely, request-like speech may not constitute a demand to the assistant, leading to false triggers. We establish Omni Demand Understanding (ODU) as a distinct multimodal contextual inference problem: given an interaction stream, a model must detect whether a user demand is present and infer intent from multimodal and conversational context. ODU evaluates this capability along five dimensions, covering both single-turn and multi-turn interactions. We construct ODU-Bench using a challenge-driven taxonomy, taxonomy-guided agentic video generation, and human-recorded interactions, followed by media-grounded annotation and human verification. We evaluate 14 native MLLMs. Even the strongest, Gemini 3.1 Pro, recovers only 44.7% of key information that must be inferred from visual, acoustic, or conversational context. Moreover, 11 of the 14 models exhibit false-trigger rates above 50% on non-demand scenarios. These results reveal a systematic capability gap in current MLLMs' ability to infer contextual user demands. We hope ODU can establish the evaluation of a previously underexplored yet essential capability in multimodal interaction: correctly understanding user demands before generating an appropriate response.",
-      "summary_zh": "",
-      "authors": [
-        "Qi Chen",
-        "Yunfei Chu",
-        "Haolin He",
-        "Yifan Yang",
-        "Zihan Liu",
-        "Yuxuan Wang",
-        "Ziyang Ma",
-        "Ruiyang Xu",
-        "Meng Gao",
-        "Yinsong Yan",
-        "Ling Wang",
-        "Hui Wang",
-        "Wen Huang",
-        "Yiheng Chen",
-        "Guanrou Yang",
-        "Qiuqiang Kong",
-        "Jin Xu",
-        "Xie Chen"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.CV",
-        "cs.MM",
-        "cs.SD"
-      ],
-      "published": "2026-09-18T07:01:37+00:00",
-      "updated": "2026-09-18T07:01:37+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21392v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21392v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21391v1",
-      "title_en": "WS-NeRF: A Mamba-Driven World-State-Aware Adaptive Deblurring Neural Radiance Field",
-      "title_zh": "",
-      "summary_en": "Neural Radiance Fields (NeRF) have attracted extensive attention in recent years due to their strong capability for high-quality 3D reconstruction and novel view synthesis from multi-view images. Existing methods usually rely on high-quality sharp inputs, while real-world image acquisition is highly susceptible to blur degradation, which severely affects the reconstruction quality of NeRF. In this paper, we propose a novel Mamba-driven world-state-aware adaptive deblurring neural radiance field, termed WS-NeRF, to address image degradation and 3D inconsistency. We formulate the alternating optimization of radiance fields as a dynamic evolution process with temporal memory, and jointly exploit comprehensive multi-dimensional world states and a mixture-of-experts mechanism to dynamically adjust the confidence of deblurring priors. Experimental results show that WS-NeRF significantly improves blurry radiance field reconstruction quality, achieving better performance on PSNR, SSIM, and LPIPS, while exhibiting more stable iterative recovery behavior.",
-      "summary_zh": "",
-      "authors": [
-        "Hang Jiang",
-        "Jinghao Wang",
-        "Yiming Zhang",
-        "Xinhong Wang",
-        "Luwei Ran",
-        "Yinfeng Yu"
-      ],
-      "categories": [
-        "eess.IV",
-        "cs.AI",
-        "cs.CV"
-      ],
-      "published": "2026-09-18T07:00:35+00:00",
-      "updated": "2026-09-18T07:00:35+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21391v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21391v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21386v1",
-      "title_en": "AgentVidBench: A Multi-Hop Video Question Answering Benchmark for Evaluating MLLM Agents",
-      "title_zh": "",
-      "summary_en": "Comprehensive video understanding is crucial for advancing artificial intelligence toward the intricate dynamics of the physical world. While recent advances in Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in video understanding, existing benchmarks remain confined to simple scene-level queries or global summaries that require only single-step inference. Real-world video understanding involves more challenging tasks that require multi-hop multimodal reasoning, and there is a critical absence of video benchmarks equipped to rigorously evaluate these agentic capabilities. To bridge this gap, we introduce AgentVidBench, a multi-hop video question answering benchmark focused on evaluating the spatial, temporal, and causal reasoning capabilities of MLLM agents. Beyond standard question-answer pairs, AgentVidBench provides step-by-step solution traces to support trajectory evaluation that assesses whether agents explicitly acquire the evidence needed to justify their answers. Experiments with 12 proprietary and open-source MLLMs show that single-turn performance remains limited on AgentVidBench, while integrating these models into state-of-the-art agentic workflows generally improves performance with respect to both accuracy and trajectory scores. We further present a simple yet effective agentic strategy that serves as a competitive baseline on AgentVidBench, establishing our benchmark as a holistic testbed for future research on agentic video understanding. Code and datasets are available at https://github.com/krafton-ai/agentvidbench and https://huggingface.co/datasets/agentvidbench/agentvidbench.",
-      "summary_zh": "",
-      "authors": [
-        "Seoyeon An",
-        "Hyeonseo Jang",
-        "Minsu Kim",
-        "Chanho Lee",
-        "Younghan Park",
-        "Kangwook Lee"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "published": "2026-09-18T06:56:33+00:00",
-      "updated": "2026-09-18T06:56:33+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21386v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21386v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
-    },
-    {
-      "id": "2609.21379v1",
-      "title_en": "JEPA Guided Diffusion: Predictive Vision-Language Conditioning for Generative Traffic Forecasting",
-      "title_zh": "",
-      "summary_en": "Accurate traffic forecasting requires both understanding scene dynamics and synthesizing realistic future observations. Recent diffusion-based video generation models produce visually plausible predictions but require expensive end-to-end training and often entangle scene understanding with image synthesis. In this work, we propose a decoupled forecasting framework that separates future representation learning from video generation. A frozen V-JEPA encoder first extracts predictive latent representations from the observed traffic videos, capturing the underlying scene dynamics in a semantic latent space. A lightweight latent alignment module then projects these representations into the conditioning space of a frozen Cosmos diffusion module, enabling future video synthesis without retraining the large generative model. By freezing all foundation models and training only the lightweight alignment module, the proposed framework substantially reduces optimization complexity while preserving forecasting capability. Experimental results on the AI City Challenge 2026 Track 5 benchmark demonstrate that the proposed method achieved a score of 75.1297, ranking third in the competition. These results suggest that predictive world representations learned by V-JEPA can effectively guide downstream video generation, providing a practical and efficient alternative to end-to-end diffusion-based forecasting.",
-      "summary_zh": "",
-      "authors": [
-        "Trinh Tra Giang Nguyen",
-        "Thanh Nguyen Vo",
-        "Nguyen Hoai Thuong Bui",
-        "Ha Duc Bui"
-      ],
-      "categories": [
-        "cs.CV"
-      ],
-      "published": "2026-09-18T06:45:37+00:00",
-      "updated": "2026-09-18T06:45:37+00:00",
-      "abs_url": "https://arxiv.org/abs/2609.21379v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.21379v1",
-      "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance | type=unknown_error | code=invalid_request_error"
     }
   ],
-  "last_updated": "2026-09-21T02:05:18.774041+00:00",
+  "last_updated": "2026-09-22T02:11:35.203156+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
