@@ -18,7 +18,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02210v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02210v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5248ba1e-c181-4a91-ac69-26490909d35d) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: eda24acd-02dc-436c-866c-b1cd6261f85b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02208v1",
@@ -42,7 +42,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02208v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02208v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5248ba1e-c181-4a91-ac69-26490909d35d) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: eda24acd-02dc-436c-866c-b1cd6261f85b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02207v1",
@@ -66,7 +66,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02207v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02207v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5248ba1e-c181-4a91-ac69-26490909d35d) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: eda24acd-02dc-436c-866c-b1cd6261f85b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02205v1",
@@ -93,7 +93,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02205v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02205v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: db2e494b-b714-4bf4-9943-c4e284d6e0a5) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 0050e080-5ae5-44de-b31d-1f11e81f7660) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02203v1",
@@ -117,7 +117,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02203v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02203v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: db2e494b-b714-4bf4-9943-c4e284d6e0a5) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 0050e080-5ae5-44de-b31d-1f11e81f7660) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02201v1",
@@ -144,7 +144,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02201v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02201v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: db2e494b-b714-4bf4-9943-c4e284d6e0a5) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 0050e080-5ae5-44de-b31d-1f11e81f7660) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02200v1",
@@ -168,7 +168,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02200v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02200v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 63b438b7-61b7-4b49-85bf-9fcc36c5d38c) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e19439f3-bbef-4b94-9dc9-2ba57040a5e4) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02197v1",
@@ -191,7 +191,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02197v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02197v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 63b438b7-61b7-4b49-85bf-9fcc36c5d38c) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e19439f3-bbef-4b94-9dc9-2ba57040a5e4) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02196v1",
@@ -216,7 +216,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02196v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02196v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 63b438b7-61b7-4b49-85bf-9fcc36c5d38c) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e19439f3-bbef-4b94-9dc9-2ba57040a5e4) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02188v1",
@@ -246,7 +246,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02188v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02188v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 8507223e-ae52-4bff-a18c-b4809f4c0801) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a259168b-442d-4b5b-a467-e95d28b45029) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02181v1",
@@ -272,7 +272,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02181v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02181v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 8507223e-ae52-4bff-a18c-b4809f4c0801) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a259168b-442d-4b5b-a467-e95d28b45029) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02180v1",
@@ -298,7 +298,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02180v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02180v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 8507223e-ae52-4bff-a18c-b4809f4c0801) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a259168b-442d-4b5b-a467-e95d28b45029) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02162v1",
@@ -323,7 +323,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02162v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02162v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 238e456e-eb00-48ae-b805-275df4b54a03) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5d3efdeb-027d-421e-8ab8-c77da513eaa7) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02160v1",
@@ -349,7 +349,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02160v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02160v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 238e456e-eb00-48ae-b805-275df4b54a03) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5d3efdeb-027d-421e-8ab8-c77da513eaa7) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02153v1",
@@ -375,7 +375,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02153v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02153v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 238e456e-eb00-48ae-b805-275df4b54a03) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 5d3efdeb-027d-421e-8ab8-c77da513eaa7) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02148v1",
@@ -398,7 +398,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02148v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02148v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 16770bf8-fae0-4912-82b9-e24438aa2c64) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: d0d16e61-623c-45ef-a202-cdf02a85f03f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02136v1",
@@ -421,7 +421,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02136v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02136v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 16770bf8-fae0-4912-82b9-e24438aa2c64) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: d0d16e61-623c-45ef-a202-cdf02a85f03f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02123v1",
@@ -444,7 +444,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02123v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02123v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 16770bf8-fae0-4912-82b9-e24438aa2c64) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: d0d16e61-623c-45ef-a202-cdf02a85f03f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02117v1",
@@ -470,7 +470,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02117v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02117v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b1b3f906-eb88-4f37-8a92-519550406b32) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a4b3ae83-19f6-4bd1-8a3d-600b658d1012) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02114v1",
@@ -495,7 +495,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02114v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02114v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b1b3f906-eb88-4f37-8a92-519550406b32) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a4b3ae83-19f6-4bd1-8a3d-600b658d1012) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02091v1",
@@ -522,7 +522,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02091v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02091v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b1b3f906-eb88-4f37-8a92-519550406b32) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: a4b3ae83-19f6-4bd1-8a3d-600b658d1012) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02051v1",
@@ -542,7 +542,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02051v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02051v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 6ff2136a-9cdf-4798-a0a5-75cbde03d65a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1e6cae68-5123-42fb-8967-df6be767a7f6) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02045v1",
@@ -566,7 +566,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02045v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02045v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 6ff2136a-9cdf-4798-a0a5-75cbde03d65a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1e6cae68-5123-42fb-8967-df6be767a7f6) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02044v1",
@@ -590,7 +590,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02044v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02044v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 6ff2136a-9cdf-4798-a0a5-75cbde03d65a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1e6cae68-5123-42fb-8967-df6be767a7f6) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02021v1",
@@ -615,7 +615,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02021v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02021v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: df1e20b9-28ef-4c63-8f8c-93a64836851a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b950ae82-b4d8-43e3-b434-b755506e9e8b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02019v1",
@@ -642,7 +642,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02019v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02019v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: df1e20b9-28ef-4c63-8f8c-93a64836851a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b950ae82-b4d8-43e3-b434-b755506e9e8b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02010v1",
@@ -673,7 +673,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02010v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02010v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: df1e20b9-28ef-4c63-8f8c-93a64836851a) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b950ae82-b4d8-43e3-b434-b755506e9e8b) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.02000v1",
@@ -695,7 +695,7 @@
       "abs_url": "https://arxiv.org/abs/2610.02000v1",
       "pdf_url": "https://arxiv.org/pdf/2610.02000v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e38ffe2c-430f-4565-91ad-f83a5e216f89) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1abd81e5-e327-4032-9096-84417081bd2f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01999v1",
@@ -718,7 +718,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01999v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01999v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e38ffe2c-430f-4565-91ad-f83a5e216f89) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1abd81e5-e327-4032-9096-84417081bd2f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01994v1",
@@ -740,7 +740,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01994v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01994v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e38ffe2c-430f-4565-91ad-f83a5e216f89) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1abd81e5-e327-4032-9096-84417081bd2f) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01989v1",
@@ -764,7 +764,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01989v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01989v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: dc328018-e1e0-4731-8b7f-e3eb88d5acac) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 55d77d23-7954-492a-9f55-6e801acac19c) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01973v1",
@@ -787,7 +787,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01973v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01973v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: dc328018-e1e0-4731-8b7f-e3eb88d5acac) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 55d77d23-7954-492a-9f55-6e801acac19c) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01969v1",
@@ -811,7 +811,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01969v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01969v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: dc328018-e1e0-4731-8b7f-e3eb88d5acac) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 55d77d23-7954-492a-9f55-6e801acac19c) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01962v1",
@@ -834,7 +834,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01962v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01962v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e7dcaa5c-f63e-4008-a2ae-66699a81afd6) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e8f378b3-aac9-4fe2-b166-99582be3d211) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01956v1",
@@ -854,7 +854,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01956v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01956v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e7dcaa5c-f63e-4008-a2ae-66699a81afd6) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e8f378b3-aac9-4fe2-b166-99582be3d211) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01944v1",
@@ -875,7 +875,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01944v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01944v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e7dcaa5c-f63e-4008-a2ae-66699a81afd6) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: e8f378b3-aac9-4fe2-b166-99582be3d211) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01942v1",
@@ -896,7 +896,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01942v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01942v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 13d254fb-360c-4aa5-9e88-c68f770dcc7b) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 10c35652-1d34-43e8-b733-7aa15ccc8aba) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01939v1",
@@ -926,7 +926,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01939v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01939v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 13d254fb-360c-4aa5-9e88-c68f770dcc7b) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 10c35652-1d34-43e8-b733-7aa15ccc8aba) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01927v1",
@@ -950,7 +950,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01927v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01927v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 13d254fb-360c-4aa5-9e88-c68f770dcc7b) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 10c35652-1d34-43e8-b733-7aa15ccc8aba) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01917v1",
@@ -978,7 +978,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01917v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01917v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 33e8a326-6fad-4f15-9207-122efba16ef3) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 88ba18e1-989c-450f-8833-84a7d602f4cc) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01914v1",
@@ -1004,7 +1004,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01914v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01914v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 33e8a326-6fad-4f15-9207-122efba16ef3) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 88ba18e1-989c-450f-8833-84a7d602f4cc) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01905v1",
@@ -1026,7 +1026,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01905v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01905v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 33e8a326-6fad-4f15-9207-122efba16ef3) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 88ba18e1-989c-450f-8833-84a7d602f4cc) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01890v1",
@@ -1050,7 +1050,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01890v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01890v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 28ced95c-1ebb-4b6d-9b1b-c70ed4cee372) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1760f368-f503-47c4-ad18-31603ca67d26) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01884v1",
@@ -1072,7 +1072,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01884v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01884v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 28ced95c-1ebb-4b6d-9b1b-c70ed4cee372) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1760f368-f503-47c4-ad18-31603ca67d26) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01876v1",
@@ -1095,7 +1095,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01876v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01876v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 28ced95c-1ebb-4b6d-9b1b-c70ed4cee372) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 1760f368-f503-47c4-ad18-31603ca67d26) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01870v1",
@@ -1115,7 +1115,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01870v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01870v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 696e1989-2513-433c-99fc-7db620c99bf0) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 4217593e-2e7f-41ac-9623-de9e50ac117d) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01863v1",
@@ -1143,7 +1143,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01863v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01863v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 696e1989-2513-433c-99fc-7db620c99bf0) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 4217593e-2e7f-41ac-9623-de9e50ac117d) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01807v1",
@@ -1167,7 +1167,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01807v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01807v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 696e1989-2513-433c-99fc-7db620c99bf0) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: 4217593e-2e7f-41ac-9623-de9e50ac117d) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01794v1",
@@ -1194,7 +1194,7 @@
       "abs_url": "https://arxiv.org/abs/2610.01794v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01794v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: acc44e46-09b4-41c6-a14a-0b6bfa10b01e) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b63bbd1f-998b-4e47-be04-cf34ed08fd3a) | type=unknown_error | code=invalid_request_error"
     },
     {
       "id": "2610.01785v1",
@@ -1218,10 +1218,10 @@
       "abs_url": "https://arxiv.org/abs/2610.01785v1",
       "pdf_url": "https://arxiv.org/pdf/2610.01785v1",
       "translation_status": "translation_error",
-      "translation_error": "HTTP 402 | Insufficient Balance (request_id: acc44e46-09b4-41c6-a14a-0b6bfa10b01e) | type=unknown_error | code=invalid_request_error"
+      "translation_error": "HTTP 402 | Insufficient Balance (request_id: b63bbd1f-998b-4e47-be04-cf34ed08fd3a) | type=unknown_error | code=invalid_request_error"
     }
   ],
-  "last_updated": "2026-10-03T02:40:48.799374+00:00",
+  "last_updated": "2026-10-04T03:11:52.871681+00:00",
   "last_error": null,
   "config": {
     "category": "cs.CV",
